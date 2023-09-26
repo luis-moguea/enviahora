@@ -3,13 +3,19 @@
 import { Box, Button, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import WaLogo from "./images/WaLogo";
 import CalltoActionImages from "./images/CalltoActionImages";
+import "./styles/bgImage.css";
 
 const CallToAction = () => {
   const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
 
   return (
     <>
-      <Box position="relative" width="100%">
+      <Box
+        position="relative"
+        width="100%"
+        className="bgImage"
+        overflow="hidden"
+      >
         <CalltoActionImages />
       </Box>
       <Box
@@ -17,7 +23,7 @@ const CallToAction = () => {
         padding={isHigherThan480 ? "100px" : "20px"}
         pt="20px"
         position="absolute"
-        top="18%"
+        top="12%"
         left="5%"
         zIndex="999"
       >

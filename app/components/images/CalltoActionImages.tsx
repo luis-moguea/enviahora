@@ -5,6 +5,7 @@ import { CSSProperties } from "react";
 import airplanesImage from "../../assets/fx-airplane.jpg";
 import workerImage from "../../assets/fx-mr.jpg";
 import truckImage from "../../assets/fx-truck.jpg";
+import "../styles/bgimage.css";
 
 const bgImages = [airplanesImage, workerImage, truckImage];
 
@@ -26,7 +27,7 @@ const CalltoActionImages = () => {
     };
 
     // Configurar un intervalo para llamar a la función cada 3 segundos
-    const intervalId = setInterval(changeBackgroundImage, 3000);
+    const intervalId = setInterval(changeBackgroundImage, 5000);
 
     // Limpia el intervalo cuando el componente se desmonta
     return () => {

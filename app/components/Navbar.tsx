@@ -3,7 +3,6 @@
 import {
   Box,
   useMediaQuery,
-  Button,
   IconButton,
   Menu,
   MenuButton,
@@ -14,11 +13,19 @@ import {
 } from "@chakra-ui/react";
 import logo from "../assets/enviahora-img-Nav.png";
 import Image from "next/image";
-
+import { motion, useAnimation } from "framer-motion";
+import { CSSProperties } from "react";
 import { TbMenu2 } from "react-icons/tb";
 import { CgMenuMotion } from "react-icons/cg";
 
 import React, { useEffect, useRef, useState } from "react";
+
+const buttonVibration = {
+  x: [0, -5, 5, -5, 5, 0], // Valores de posición en el eje X para la vibración
+  transition: {
+    duration: 0.3, // Duración de la animación en segundos
+  },
+};
 
 const Navbar = () => {
   const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
@@ -43,6 +50,22 @@ const Navbar = () => {
     };
   }, [menuIconState]);
 
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const animateVibration = async () => {
+      while (true) {
+        await controls.start({ rotate: -2 }); // Vibración hacia la izquierda
+        await controls.start({ rotate: 2 }); // Vibración hacia la derecha
+      }
+    };
+
+    animateVibration();
+
+    // Detener la animación al desmontar el componente (si es necesario)
+    return () => controls.stop();
+  }, [controls]);
+
   const imageStyle = {
     borderRadius: "50%",
     border: "1px solid #fff",
@@ -51,6 +74,16 @@ const Navbar = () => {
 
   const handleMenuClick = () => {
     setMenuIconState(!menuIconState);
+  };
+
+  const buttonStyle: CSSProperties = {
+    width: isHigherThan480 ? "250px" : "120px",
+    height: isHigherThan480 ? "60px" : "40px",
+    fontSize: isHigherThan480 ? "25px" : "unset",
+    color: "#ffffff",
+    backgroundColor: "#ff6200",
+    marginRight: "30px",
+    borderRadius: "20px",
   };
 
   return (
@@ -66,7 +99,7 @@ const Navbar = () => {
       position={isHigherThan480 ? "unset" : "fixed"} // Cambia la posición a "fixed" cuando es mayor a 480px
       top={isHigherThan480 ? "unset" : 0} // Añade un valor "top" solo cuando es mayor a 480px
       width="100%" // Agrega esto para que ocupe todo el ancho en modo fijo
-      borderBottom="solid 4px black"
+      boxShadow="0px 4px 6px rgba(150, 75, 0, 0.2)"
     >
       <Image
         alt="fedex-envio-logo"
@@ -76,16 +109,9 @@ const Navbar = () => {
         height={isHigherThan480 ? 90 : 40}
       />
       <Box display="flex">
-        <Button
-          width={isHigherThan480 ? "250px" : "120px"}
-          height={isHigherThan480 ? "60px" : "40px"}
-          fontSize={isHigherThan480 ? "25px" : "unset"}
-          color="#ffffff"
-          bgColor="#ff6200"
-          mr="30px"
-        >
+        <motion.button style={buttonStyle} animate={controls}>
           Cotiza Ahora!
-        </Button>
+        </motion.button>
         {isHigherThan480 ? (
           <HStack gap="30px">
             <Text cursor="pointer">¿Quienes somos?</Text>
