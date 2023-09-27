@@ -33,7 +33,7 @@ const CallToAction = () => {
           ¡Aquí te ayudamos!
         </Heading>
         <Button
-          mt={isHigherThan480 ? "20px" : "10px"}
+          mt={isHigherThan480 ? "40px" : "10px"}
           width={isHigherThan480 ? "250px" : "120px"}
           height={isHigherThan480 ? "60px" : "40px"}
           fontSize={isHigherThan480 ? "25px" : "unset"}

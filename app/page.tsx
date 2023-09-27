@@ -47,6 +47,7 @@ export default function Home() {
             alt={el.alt}
             image={el.image}
             text={el.text}
+            ml={index !== 0 ? "20px" : "unset"}
           />
         ))}
       </Box>
