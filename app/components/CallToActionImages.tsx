@@ -5,7 +5,7 @@ import { CSSProperties } from "react";
 import airplanesImage from "./assets/fx-airplane.jpg";
 import workerImage from "./assets/fx-mr.jpg";
 import truckImage from "./assets/fx-truck.jpg";
-import "./bgimageStyle.css";
+import "../../app/globals.css";
 
 const bgImages = [airplanesImage, workerImage, truckImage];
 
