@@ -37,8 +37,8 @@ export default function Home() {
       <CallToAction />
       <AboutProduct />
       <Box>
-        <Heading as="h2" textAlign="center">
-          Ellos ya vivieron la experiencia, ¡se tú el siguiente en vivirla!
+        <Heading as="h2" textAlign="center" color="#4d148c">
+          Ellos ya vivieron la experiencia. ¡Se tú el siguiente en vivirla!
         </Heading>
         <Box
           display="flex"

@@ -18,7 +18,7 @@ const AboutProduct = () => {
       alignItems="center"
     >
       <Box width="50%">
-        <Heading as="h2" textAlign="justify">
+        <Heading as="h2" textAlign="justify" color="#4d148c">
           No importa lo que necesites enviar, nosotros te lo llevamos con la
           mejor empresa en el campo, ¡FedEx!
         </Heading>
