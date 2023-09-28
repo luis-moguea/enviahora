@@ -9,7 +9,7 @@ import "../styles/bgimageStyle.css";
 
 const bgImages = [airplanesImage, workerImage, truckImage];
 
-const CallToActionImages = () => {
+const CallToActionImg = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const imageStyle: CSSProperties = {
@@ -45,4 +45,4 @@ const CallToActionImages = () => {
   );
 };
 
-export default CallToActionImages;
+export default CallToActionImg;
