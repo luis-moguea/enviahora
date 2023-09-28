@@ -1,4 +1,4 @@
-import img from "./components/assets/fedex-img.png"
+import img from "../components/assets/fedex-img.png"
 
 export const generalInfoData = [
     {
