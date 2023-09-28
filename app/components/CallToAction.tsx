@@ -2,7 +2,7 @@
 
 import { Box, Button, Heading, useMediaQuery } from "@chakra-ui/react";
 import WaLogo from "./images/WaLogo";
-import CallToActionImgUse from "./images/CallToActionImages";
+import CallToActionImgUse from "./CallToActionImages";
 
 const CallToAction = () => {
   const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
