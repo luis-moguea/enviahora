@@ -1,8 +1,8 @@
 "use client";
 
-import { Box, Text, useMediaQuery } from "@chakra-ui/react";
+import { Box, useMediaQuery } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
-import CallToAction from "./components/CallToAction";
+import Calltoaction from "./components/CallToAction";
 import AboutProduct from "./components/AboutProduct";
 import { generalInfoData } from "./data/generalInfoData";
 import GeneralInformation from "./components/GeneralInformation";
@@ -33,7 +33,7 @@ export default function Home() {
       >
         ¡Conexiones Sin Fronteras, Entregas Sin Preocupaciones!
       </motion.h1>
-      <CallToAction />
+      <Calltoaction />
       <AboutProduct />
       <Box
         display="flex"

@@ -1,6 +1,5 @@
 /* CalltoActionImages.css */
-
-  .bgimage{
+.bg-image{
     -webkit-animation: kenburns-top 15s ease-out infinite both;
     animation: kenburns-top 15s ease-out infinite both;
   }

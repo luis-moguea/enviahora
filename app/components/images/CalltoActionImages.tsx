@@ -5,11 +5,11 @@ import { CSSProperties } from "react";
 import airplanesImage from "../../assets/fx-airplane.jpg";
 import workerImage from "../../assets/fx-mr.jpg";
 import truckImage from "../../assets/fx-truck.jpg";
-import "../styles/bgimage.css";
+import "../styles/BgimageStyle.css";
 
 const bgImages = [airplanesImage, workerImage, truckImage];
 
-const CalltoActionImages = () => {
+const Calltoactionimages = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const imageStyle: CSSProperties = {
@@ -37,7 +37,7 @@ const CalltoActionImages = () => {
 
   return (
     <Image
-      className="bgimage"
+      className="bg-image"
       alt="fedex-envios-internacionales-shipment"
       style={imageStyle}
       src={bgImages[currentImageIndex]}
@@ -45,4 +45,4 @@ const CalltoActionImages = () => {
   );
 };
 
-export default CalltoActionImages;
+export default Calltoactionimages;
