@@ -2,15 +2,15 @@
 
 import { Box, Button, Heading, useMediaQuery } from "@chakra-ui/react";
 import WaLogo from "./images/WaLogo";
-import Calltoactionimages from "./images/CallToActionImages";
+import CallToActionImages from "./images/CallToActionImages";
 
-const Calltoaction = () => {
+const CallToAction = () => {
   const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
 
   return (
     <>
       <Box position="relative" width="100%" overflow="hidden">
-        <Calltoactionimages />
+        <CallToActionImages />
       </Box>
       <Box
         textAlign="center"
@@ -45,4 +45,4 @@ const Calltoaction = () => {
   );
 };
 
-export default Calltoaction;
+export default CallToAction;

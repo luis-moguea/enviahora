@@ -2,13 +2,13 @@
 
 import { Box, useMediaQuery } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
-import Calltoaction from "./components/CallToAction";
 import AboutProduct from "./components/AboutProduct";
 import { generalInfoData } from "./data/generalInfoData";
 import GeneralInformation from "./components/GeneralInformation";
 import WaLogoFixed from "./components/images/WaLogoFixed";
 import { motion } from "framer-motion";
 import { CSSProperties } from "react";
+import CallToAction from "./components/CallToAction";
 
 export default function Home() {
   const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
@@ -33,7 +33,7 @@ export default function Home() {
       >
         ¡Conexiones Sin Fronteras, Entregas Sin Preocupaciones!
       </motion.h1>
-      <Calltoaction />
+      <CallToAction />
       <AboutProduct />
       <Box
         display="flex"
