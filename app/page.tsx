@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, useMediaQuery } from "@chakra-ui/react";
+import { Box, Heading, useMediaQuery } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import AboutProduct from "./components/AboutProduct";
 import { generalInfoData } from "./data/generalInfoData";
@@ -9,6 +9,7 @@ import WaLogoFixed from "./components/images/WaLogoFixed";
 import { motion } from "framer-motion";
 import { CSSProperties } from "react";
 import CallToAction from "./components/CallToAction";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
@@ -35,22 +36,34 @@ export default function Home() {
       </motion.h1>
       <CallToAction />
       <AboutProduct />
-      <Box
-        display="flex"
-        alignItems="center"
-        padding={isHigherThan480 ? "40px" : "20px"}
-        overflowX="auto"
-      >
-        {generalInfoData.map((el, index) => (
-          <GeneralInformation
-            key={index}
-            alt={el.alt}
-            image={el.image}
-            text={el.text}
-            ml={index !== 0 ? "20px" : "unset"}
-          />
-        ))}
+      <Box>
+        <Heading as="h2" textAlign="center">
+          Ellos ya vivieron la experiencia, ¡se tú el siguiente en vivirla!
+        </Heading>
+        <Box
+          display="flex"
+          alignItems="center"
+          padding={isHigherThan480 ? "40px" : "20px"}
+          overflowX="auto"
+          sx={{
+            "::-webkit-scrollbar": {
+              display: "none",
+            },
+          }}
+        >
+          {generalInfoData.map((el, index) => (
+            <GeneralInformation
+              key={index}
+              alt={el.alt}
+              image={el.image}
+              text={el.text}
+              name={el.name}
+              ml={index !== 0 ? "20px" : "unset"}
+            />
+          ))}
+        </Box>
       </Box>
+      <Footer />
       <WaLogoFixed />
     </>
   );

@@ -102,7 +102,7 @@ const Navbar = () => {
       boxShadow="0px 4px 6px rgba(150, 75, 0, 0.2)"
     >
       <Image
-        alt="fedex-envio-logo"
+        alt="fedex-envio-logo-envios-internacional-ship-shipment-baratos-estados-unidos-rapidos"
         style={imageStyle}
         src={logo}
         width={isHigherThan480 ? 80 : 40}

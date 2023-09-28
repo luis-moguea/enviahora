@@ -4,21 +4,24 @@ import { Box, useMediaQuery, Text, Icon } from "@chakra-ui/react";
 import Image, { StaticImageData } from "next/image";
 import { CSSProperties } from "react";
 import { BsFillStarFill } from "react-icons/bs";
+import "../../app/globals.css";
 
 interface Props {
   text: string;
   image: StaticImageData | string;
   alt: string;
   ml: string;
+  name: string;
 }
 
-const GeneralInformation = ({ image, text, alt, ml }: Props) => {
+const GeneralInformation = ({ image, text, alt, name, ml }: Props) => {
   const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
 
   const imageStyle: CSSProperties = {
-    width: "100%",
+    maxWidth: "80px",
+    maxHeight: "80px",
     cursor: "pointer",
-    borderRadius: "50%",
+    borderRadius: "40px",
     objectFit: "cover",
   };
 
@@ -29,16 +32,19 @@ const GeneralInformation = ({ image, text, alt, ml }: Props) => {
       display="flex"
       p="28px"
       ml={ml}
+      minW="300px"
+      minH="360px"
     >
       <Box
         padding="10px"
         display="flex"
         flexDir="column"
         justifyContent="space-between"
+        width="100%"
       >
         <Image alt={alt} src={image} style={imageStyle} />
-        <Text whiteSpace="nowrap" fontStyle="oblique">
-          Luis M.
+        <Text fontWeight="bold" whiteSpace="nowrap" fontStyle="oblique">
+          {name}
         </Text>
       </Box>
       <Box>
@@ -53,9 +59,10 @@ const GeneralInformation = ({ image, text, alt, ml }: Props) => {
           <Text
             fontSize="14px"
             fontStyle="italic"
+            fontWeight="bold"
             color="#5d5d5d"
             lineHeight="1.3"
-            p={isHigherThan480 ? "20px 0 20px 20px" : "10px"}
+            p={isHigherThan480 ? "20px 0 20px 0px" : "10px"}
             textAlign="right"
           >
             {text}
