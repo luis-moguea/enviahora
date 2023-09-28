@@ -1,6 +1,5 @@
 import Image from "next/image";
-import waLogo from "../../assets/waIcon.png";
-import { Box } from "@chakra-ui/react";
+import waLogo from "../assets/waIcon.png";
 import { CSSProperties } from "react";
 
 const WaLogoFixed = () => {

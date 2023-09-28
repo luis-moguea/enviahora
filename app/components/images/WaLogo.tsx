@@ -1,5 +1,5 @@
 import Image from "next/image";
-import waLogo from "../../assets/waIcon.png";
+import waLogo from "../assets/waIcon.png";
 
 const WaLogo = () => {
   return (

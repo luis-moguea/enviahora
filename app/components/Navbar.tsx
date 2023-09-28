@@ -11,7 +11,7 @@ import {
   Text,
   HStack,
 } from "@chakra-ui/react";
-import logo from "../assets/enviahora-img-Nav.png";
+import logo from "./assets/enviahora-img-Nav.png";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { CSSProperties } from "react";

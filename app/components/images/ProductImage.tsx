@@ -1,5 +1,5 @@
 import Image from "next/image";
-import fedexGirl from "../../assets/fedex-girl.jpg";
+import fedexGirl from "../assets/fedex-girl.jpg";
 import { CSSProperties } from "react";
 
 const ProductImage = () => {
