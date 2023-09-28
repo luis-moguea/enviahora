@@ -66,8 +66,13 @@ const Footer = () => {
               ></Icon>
             </Box>
           </Box>
-          <Text fontSize="14px" color="#F5DEB3" textAlign="center">
-            sjdvh.nvjd.f
+          <Text
+            fontStyle="italic"
+            fontSize="14px"
+            color="#F5DEB3"
+            textAlign="center"
+          >
+            ¡Conexiones Sin Fronteras, Entregas Sin Preocupaciones!
           </Text>
         </Box>
       </Box>
@@ -77,7 +82,9 @@ const Footer = () => {
             boxShadow: "0 0 1px rgba(0, 0, 0, 0.2)",
           }}
         />
-        <Text></Text>
+        <Text mt="20px" fontSize="12px" color="#F5DEB3" textAlign="center">
+          Enviahora | Todos los derechos reservados &reg;
+        </Text>
       </Box>
     </Box>
   );
