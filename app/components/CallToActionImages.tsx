@@ -2,10 +2,10 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { CSSProperties } from "react";
 
-import airplanesImage from "../../assets/fx-airplane.jpg";
-import workerImage from "../../assets/fx-mr.jpg";
-import truckImage from "../../assets/fx-truck.jpg";
-import "../styles/bgimageStyle.css";
+import airplanesImage from "./assets/fx-airplane.jpg";
+import workerImage from "./assets/fx-mr.jpg";
+import truckImage from "./assets/fx-truck.jpg";
+import "./styles/bgimageStyle.css";
 
 const bgImages = [airplanesImage, workerImage, truckImage];
 
