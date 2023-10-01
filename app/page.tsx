@@ -132,7 +132,6 @@ export default function Home() {
             conexiones globales y contribuir al crecimiento en un mundo cada vez
             más interconectado.
           </Text>
-          {/* Resto del contenido sobre la empresa */}
         </Box>
       )}
       {showContent === "bonus" && (
