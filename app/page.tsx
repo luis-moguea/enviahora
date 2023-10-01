@@ -26,30 +26,39 @@ export default function Home() {
   const [showMain, setShowMain] = useState(false);
   const [showBonus, setShowBonus] = useState(false);
 
-
-  useEffect(()=> {
-    setShowMain(true)
-  }, [])
+  useEffect(() => {
+    setShowMain(true);
+  }, []);
 
   const handleShowAbout = () => {
-    setShowBonus(false);
-    setShowMain(false);
+    if (showMain) {
+      setShowMain(false);
+    }
+    if (showBonus) {
+      setShowBonus(false);
+    }
     setShowAbout(true);
   };
 
   const handleShowBonus = () => {
-    setShowAbout(false);
-    setShowMain(false);
+    if (showMain) {
+      setShowMain(false);
+    }
+    if (showAbout) {
+      setShowAbout(false);
+    }
     setShowBonus(true);
   };
 
   const handleMain = () => {
-    setShowBonus(false);
-    setShowAbout(false);
+    if (showAbout) {
+      setShowAbout(false);
+    }
+    if (showBonus) {
+      setShowBonus(false);
+    }
     setShowMain(true);
   };
-
-
 
   const sloganStyle: CSSProperties = {
     fontSize: isHigherThan480 ? "25px" : "18px",
