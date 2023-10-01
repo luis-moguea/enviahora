@@ -27,7 +27,12 @@ const buttonVibration = {
   },
 };
 
-const Navbar = () => {
+interface Props {
+  onClickAbout: () => void;
+  onClickBonus: () => void;
+}
+
+const Navbar = ({ onClickAbout, onClickBonus }: Props) => {
   const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
   const refElement = useRef<HTMLDivElement | null>(null);
   const [menuIconState, setMenuIconState] = useState(false);
@@ -66,10 +71,12 @@ const Navbar = () => {
     return () => controls.stop();
   }, [controls]);
 
-  const imageStyle = {
+  const imageStyle: CSSProperties = {
     borderRadius: "50%",
     border: "1px solid #fff",
     cursor: "pointer",
+    minWidth: "80px",
+    minHeight: "80px",
   };
 
   const handleMenuClick = () => {
@@ -114,9 +121,13 @@ const Navbar = () => {
         </motion.button>
         {isHigherThan480 ? (
           <HStack gap="30px">
-            <Text cursor="pointer">¿Quienes somos?</Text>
+            <Text cursor="pointer" onClick={onClickAbout}>
+              ¿Quienes somos?
+            </Text>
             <Text cursor="pointer">Paises destino</Text>
-            <Text cursor="pointer">Bonos</Text>
+            <Text cursor="pointer" onClick={onClickBonus}>
+              Bonos
+            </Text>
           </HStack>
         ) : (
           <Menu>
