@@ -23,8 +23,13 @@ import WaLogo from "./components/images/WaLogo";
 export default function Home() {
   const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
   const [showAbout, setShowAbout] = useState(false);
-  const [showMain, setShowMain] = useState(true);
+  const [showMain, setShowMain] = useState(false);
   const [showBonus, setShowBonus] = useState(false);
+
+
+  useEffect(()=> {
+    setShowMain(true)
+  }, [])
 
   const handleShowAbout = () => {
     setShowBonus(false);
@@ -43,6 +48,8 @@ export default function Home() {
     setShowAbout(false);
     setShowMain(true);
   };
+
+
 
   const sloganStyle: CSSProperties = {
     fontSize: isHigherThan480 ? "25px" : "18px",
