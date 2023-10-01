@@ -31,33 +31,34 @@ export default function Home() {
   }, []);
 
   const handleShowAbout = () => {
+    setShowAbout(true);
+
     if (showMain) {
       setShowMain(false);
     }
     if (showBonus) {
       setShowBonus(false);
     }
-    setShowAbout(true);
   };
 
   const handleShowBonus = () => {
+    setShowBonus(true);
     if (showMain) {
       setShowMain(false);
     }
     if (showAbout) {
       setShowAbout(false);
     }
-    setShowBonus(true);
   };
 
   const handleMain = () => {
+    setShowMain(true);
     if (showAbout) {
       setShowAbout(false);
     }
     if (showBonus) {
       setShowBonus(false);
     }
-    setShowMain(true);
   };
 
   const sloganStyle: CSSProperties = {
