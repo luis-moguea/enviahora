@@ -231,22 +231,22 @@ export default function Home() {
             <Box display="flex" fontSize="lg">
               <Icon color="#ff6200" as={FaPlane} fontSize="2xl" mr={2} />
               <Text fontWeight="bold">
-                Actualmente, ofrecemos opciones de envío económico que brindan
-                flexibilidad en los tiempos de entrega:
+                Actualmente, ofrecemos opciones de envío que brindan
+                flexibilidad en los tiempos de entrega a más de 220 países.
               </Text>
             </Box>
             <Box mt={4} ml={4}>
               <Icon color="#ff6200" as={FaPlane} fontSize="md" mr={2} /> Para
-              países seleccionados, nuestros envíos económicos pueden entregarse
-              en tan solo 2 a 3 días hábiles, lo que garantiza una rápida
-              llegada de tus paquetes.
+              países seleccionados, nuestros envíos pueden entregarse en tan
+              solo 2 a 3 días hábiles, lo que garantiza una rápida llegada de
+              tus paquetes.
             </Box>
             <Box mt={2} ml={4}>
               <Icon color="#ff6200" as={FaPlane} fontSize="md" mr={2} /> Para un
               alcance aún más amplio, extendemos nuestros servicios a más de 215
-              países y territorios. En estos casos, los envíos económicos pueden
-              tardar de 2 a 5 días en llegar a su destino, asegurando una
-              entrega eficiente y económica en todo el mundo.
+              países y territorios. En estos casos, los envíos pueden tardar de
+              2 a 5 días en llegar a su destino, asegurando una entrega
+              eficiente en todo el mundo.
             </Box>
             <Link
               href="https://www.fedex.com/es-es/shipping/served-countries.html"
