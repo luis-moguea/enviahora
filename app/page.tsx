@@ -158,10 +158,7 @@ export default function Home() {
           <Heading textAlign="center" as="h2" color="#4d148c" fontSize="40px">
             Bonos
           </Heading>
-          <Box>
-            <Text fontSize="lg" fontWeight="bold" mb={2}>
-              ¡Oferta Exclusiva!
-            </Text>
+          <Box mt="40px">
             <Text>
               ¡Síguenos en redes sociales y ahorra un{" "}
               <Text fontWeight="bold" as="span">
