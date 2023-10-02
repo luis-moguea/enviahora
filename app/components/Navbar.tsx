@@ -10,6 +10,7 @@ import {
   MenuList,
   Text,
   HStack,
+  Link,
 } from "@chakra-ui/react";
 import logo from "./assets/enviahora-img-Nav.png";
 import Image from "next/image";
@@ -17,6 +18,7 @@ import { motion, useAnimation } from "framer-motion";
 import { CSSProperties } from "react";
 import { TbMenu2 } from "react-icons/tb";
 import { CgMenuMotion } from "react-icons/cg";
+import NextLink from "next/link";
 
 import React, { useEffect, useRef, useState } from "react";
 
@@ -30,9 +32,16 @@ const buttonVibration = {
 interface Props {
   onClickAbout: () => void;
   onClickBonus: () => void;
+  onClickCountries: () => void;
+  onClickLogo: () => void;
 }
 
-const Navbar = ({ onClickAbout, onClickBonus }: Props) => {
+const Navbar = ({
+  onClickAbout,
+  onClickBonus,
+  onClickCountries,
+  onClickLogo,
+}: Props) => {
   const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
   const refElement = useRef<HTMLDivElement | null>(null);
   const [menuIconState, setMenuIconState] = useState(false);
@@ -114,17 +123,25 @@ const Navbar = ({ onClickAbout, onClickBonus }: Props) => {
         src={logo}
         width={isHigherThan480 ? 80 : 40}
         height={isHigherThan480 ? 90 : 40}
+        onClick={onClickLogo}
       />
       <Box display="flex">
-        <motion.button style={buttonStyle} animate={controls}>
-          Cotiza Ahora!
-        </motion.button>
+        <Link
+          href="https://www.fedex.com/es-es/shipping/served-countries.html"
+          isExternal
+        >
+          <motion.button style={buttonStyle} animate={controls}>
+            Cotiza Ahora!
+          </motion.button>
+        </Link>
         {isHigherThan480 ? (
           <HStack gap="30px">
             <Text cursor="pointer" onClick={onClickAbout}>
               ¿Quienes somos?
             </Text>
-            <Text cursor="pointer">Paises destino</Text>
+            <Text cursor="pointer" onClick={onClickCountries}>
+              Paises destino
+            </Text>
             <Text cursor="pointer" onClick={onClickBonus}>
               Bonos
             </Text>

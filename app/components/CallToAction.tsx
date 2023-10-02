@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Button, Heading, useMediaQuery } from "@chakra-ui/react";
+import { Box, Button, Heading, useMediaQuery, Link } from "@chakra-ui/react";
 import WaLogo from "./images/WaLogo";
 import CallToActionImgUse from "./CallToActionImages";
 
@@ -22,24 +22,29 @@ const CallToAction = () => {
         zIndex="999"
       >
         <Heading color="#4d148c" fontSize={isHigherThan480 ? "70px" : "20px"}>
-          ¿Necesitas enviar un paquete?
+          ¿Necesitas enviar un paquete desde Medellín?
           <br />
           ¡Aquí te ayudamos!
         </Heading>
-        <Button
-          mt={isHigherThan480 ? "40px" : "10px"}
-          width={isHigherThan480 ? "250px" : "120px"}
-          height={isHigherThan480 ? "60px" : "40px"}
-          fontSize={isHigherThan480 ? "25px" : "unset"}
-          color="#ffffff"
-          bgColor="#ff6200"
-          borderRadius="40px"
-          rightIcon={<WaLogo />}
-          padding="20px"
-          _hover={{ bgColor: "#4d148c" }}
+        <Link
+          href="https://www.fedex.com/es-es/shipping/served-countries.html"
+          isExternal
         >
-          Cotiza Ahora!
-        </Button>
+          <Button
+            mt={isHigherThan480 ? "40px" : "10px"}
+            width={isHigherThan480 ? "250px" : "120px"}
+            height={isHigherThan480 ? "60px" : "40px"}
+            fontSize={isHigherThan480 ? "25px" : "unset"}
+            color="#ffffff"
+            bgColor="#ff6200"
+            borderRadius="40px"
+            rightIcon={<WaLogo />}
+            padding="20px"
+            _hover={{ bgColor: "#4d148c" }}
+          >
+            Cotiza Ahora!
+          </Button>
+        </Link>
       </Box>
     </>
   );

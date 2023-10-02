@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Divider, Icon, Text } from "@chakra-ui/react";
+import { Box, Divider, Icon, Text, Link } from "@chakra-ui/react";
 import React from "react";
 import Image from "next/image";
 import { CSSProperties } from "react";
@@ -37,33 +37,48 @@ const Footer = () => {
         <Box display="flex" flexDir="column" padding="50px">
           <Box display="flex" alignItems="center">
             <Box>
-              <Icon
-                as={AiFillFacebook}
-                color="#1877F2"
-                w={12}
-                h={10}
-                cursor="pointer"
-              ></Icon>
+              <Link
+                href="https://www.fedex.com/es-es/shipping/served-countries.html"
+                isExternal
+              >
+                <Icon
+                  as={AiFillFacebook}
+                  color="#1877F2"
+                  w={12}
+                  h={10}
+                  cursor="pointer"
+                ></Icon>
+              </Link>
             </Box>
             <Box>
-              <Icon
-                as={CiInstagram}
-                color="#E4405F"
-                ml="12px"
-                w={12}
-                h={10}
-                cursor="pointer"
-              ></Icon>
+              <Link
+                href="https://www.fedex.com/es-es/shipping/served-countries.html"
+                isExternal
+              >
+                <Icon
+                  as={CiInstagram}
+                  color="#E4405F"
+                  ml="12px"
+                  w={12}
+                  h={10}
+                  cursor="pointer"
+                ></Icon>
+              </Link>
             </Box>
             <Box>
-              <Icon
-                as={BsWhatsapp}
-                color="#25D366"
-                ml="12px"
-                w={10}
-                h={8}
-                cursor="pointer"
-              ></Icon>
+              <Link
+                href="https://www.fedex.com/es-es/shipping/served-countries.html"
+                isExternal
+              >
+                <Icon
+                  as={BsWhatsapp}
+                  color="#25D366"
+                  ml="12px"
+                  w={10}
+                  h={8}
+                  cursor="pointer"
+                ></Icon>
+              </Link>
             </Box>
           </Box>
           <Text
