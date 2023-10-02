@@ -64,7 +64,7 @@ export default function Home() {
           <AboutProduct />
           <Box>
             <Heading as="h2" textAlign="center" color="#4d148c">
-              Ellos ya vivieron la experiencia. ¡Sé tú el siguiente en vivirla!
+              Ellos ya vivieron la experiencia. ¡Se tú el siguiente en vivirla!
             </Heading>
             <Box
               display="flex"

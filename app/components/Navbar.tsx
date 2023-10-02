@@ -137,10 +137,10 @@ const Navbar = ({
         {isHigherThan480 ? (
           <HStack gap="30px">
             <Text cursor="pointer" onClick={onClickAbout}>
-              ¿Quienes somos?
+              ¿Quiénes somos?
             </Text>
             <Text cursor="pointer" onClick={onClickCountries}>
-              Paises destino
+              Países destino
             </Text>
             <Text cursor="pointer" onClick={onClickBonus}>
               Bonos

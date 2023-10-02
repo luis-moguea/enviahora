@@ -19,8 +19,8 @@ const AboutProduct = () => {
     >
       <Box width="50%">
         <Heading as="h2" textAlign="justify" color="#4d148c">
-          No importa lo que necesites enviar, nosotros te lo llevamos con la
-          mejor empresa en el campo, ¡FedEx!
+          Sin importar lo que necesites enviar, nosotros llevaremos tus paquetes
+          con la mejor empresa en el campo, ¡FedEx!
         </Heading>
         <Box mt="40px" width="500px">
           <Box display="flex" gap="10px" mt="20px">
@@ -29,19 +29,19 @@ const AboutProduct = () => {
           </Box>
           <Box display="flex" gap="10px" mt="20px">
             <Icon as={MdTrackChanges} w={6} h={5} color="#ff6200" />
-            Seguimiento en tiempo real de sus envíos internacionales.
+            ¡Seguimiento en tiempo real de tus envíos internacionales!
           </Box>
           <Box display="flex" gap="10px" mt="20px">
             <Icon as={RiBillLine} w={6} h={5} color="#ff6200" />
-            Para tu tranquilidad te brindamos facturación electrónica de la Dian
+            Para tu tranquilidad te brindamos facturación electrónica.
           </Box>
           <Box display="flex" gap="10px" mt="20px">
             <Icon as={AiOutlineFieldTime} w={6} h={5} color="#ff6200" />
-            Tiempo de entrega de tus envíos en tiempos muy cortos!
+            ¡El tiempo de entrega de tus paquetes será siempre muy corto!
           </Box>
           <Box display="flex" gap="10px" mt="20px">
-            <Icon as={FaMotorcycle} w={6} h={5} color="#ff6200" />Y lo mejor es
-            que siempre recogeremos tu paquete para que no tengas que dejar la
+            <Icon as={FaMotorcycle} w={6} h={5} color="#ff6200" />
+            ¡Siempre recogeremos tu paquete para que no tengas que dejar la
             comodidad de tu hogar!
           </Box>
         </Box>
