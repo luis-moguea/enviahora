@@ -13,7 +13,7 @@ export const generalInfoData = [
         text: '"Enviahora superó mis expectativas. Mi paquete llegó a su destino internacional mucho más rápido de lo que esperaba. La atención al cliente fue excepcional, y el seguimiento en tiempo real me dio tranquilidad durante todo el proceso."',
         image: patricia,
         alt: "envios-internacional-ship-shipment-baratos-estados-unidos-rapidos",
-        name: "Patricia B."
+        name: "Ernesto B."
     },{
         text: '"Cotizar mi envío internacional nunca fue tan fácil. Sin complicaciones ni sorpresas en la factura final. ¡Definitivamente volveré a utilizar sus servicios!"',
         image: cristina,
