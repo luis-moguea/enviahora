@@ -52,7 +52,7 @@ export default function Home() {
         onClickLogo={() => handleShowContent("main")}
       />
       {showContent === "main" && (
-        <Box width="100%" border="solid 1px black">
+        <Box width="112%" border="solid 1px black">
           <motion.h1
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
