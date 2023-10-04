@@ -33,9 +33,9 @@ const GeneralInformation = ({ image, text, alt, name, ml }: Props) => {
       p="28px"
       ml={ml}
       minW="300px"
-      minH="360px"
+      minH="390px"
       maxW="300px"
-      maxH="360px"
+      maxH="390px"
     >
       <Box
         padding="10px"
