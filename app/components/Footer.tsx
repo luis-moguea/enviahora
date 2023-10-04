@@ -20,12 +20,11 @@ const Footer = () => {
   const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
 
   const imageStyle: CSSProperties = {
-    maxWidth: "180px",
-    minHeight: "180px",
+    maxWidth: isHigherThan480 ? "180px" : "120px",
+    maxHeight: isHigherThan480 ? "180px" : "120px",
     borderRadius: "50%",
     border: "1px solid #fff",
     cursor: "pointer",
-    objectFit: "cover",
   };
 
   return (
@@ -34,61 +33,81 @@ const Footer = () => {
       alignItems="center"
       justifyContent="center"
       bgColor="#4d148c"
-      minH={isHigherThan480 ? "400px" : "300px"}
+      minH={isHigherThan480 ? "400px" : "250px"}
       flexDir="column"
       width="100%"
+      mt={isHigherThan480 ? "unset" : "40px"}
+      p={isHigherThan480 ? "unset" : "40px"}
     >
-      <Box display="flex" padding="40px" pt="0">
+      <Box
+        display="flex"
+        flexDir={isHigherThan480 ? "unset" : "column"}
+        justifyContent={isHigherThan480 ? "unset" : "center"}
+        alignItems={isHigherThan480 ? "unset" : "center"}
+        padding="40px"
+        pt="0"
+      >
         <Image
           alt="envios-internacional-ship-shipment-baratos-estados-unidos-rapidos"
           src={logo}
           style={imageStyle}
         />
-        <Box display="flex" flexDir="column" padding="50px">
-          <Box display="flex" alignItems="center">
-            <Box>
-              <Link
-                href="https://www.fedex.com/es-es/shipping/served-countries.html"
-                isExternal
-              >
-                <Icon
-                  as={AiFillFacebook}
-                  color="#1877F2"
-                  w={12}
-                  h={10}
-                  cursor="pointer"
-                ></Icon>
-              </Link>
-            </Box>
-            <Box>
-              <Link
-                href="https://www.fedex.com/es-es/shipping/served-countries.html"
-                isExternal
-              >
-                <Icon
-                  as={CiInstagram}
-                  color="#E4405F"
-                  ml="12px"
-                  w={12}
-                  h={10}
-                  cursor="pointer"
-                ></Icon>
-              </Link>
-            </Box>
-            <Box>
-              <Link
-                href="https://www.fedex.com/es-es/shipping/served-countries.html"
-                isExternal
-              >
-                <Icon
-                  as={BsWhatsapp}
-                  color="#25D366"
-                  ml="12px"
-                  w={10}
-                  h={8}
-                  cursor="pointer"
-                ></Icon>
-              </Link>
+        <Box
+          display="flex"
+          flexDir="column"
+          padding={isHigherThan480 ? "50px" : "10px"}
+        >
+          <Box
+            display="flex"
+            flexDir={isHigherThan480 ? "unset" : "column"}
+            justifyContent={isHigherThan480 ? "unset" : "center"}
+            alignItems="center"
+          >
+            <Box display="flex" alignItems="center">
+              <Box>
+                <Link
+                  href="https://www.fedex.com/es-es/shipping/served-countries.html"
+                  isExternal
+                >
+                  <Icon
+                    as={AiFillFacebook}
+                    color="#1877F2"
+                    w={12}
+                    h={10}
+                    cursor="pointer"
+                  ></Icon>
+                </Link>
+              </Box>
+              <Box>
+                <Link
+                  href="https://www.fedex.com/es-es/shipping/served-countries.html"
+                  isExternal
+                >
+                  <Icon
+                    as={CiInstagram}
+                    color="#E4405F"
+                    ml="12px"
+                    w={12}
+                    h={10}
+                    cursor="pointer"
+                  ></Icon>
+                </Link>
+              </Box>
+              <Box>
+                <Link
+                  href="https://www.fedex.com/es-es/shipping/served-countries.html"
+                  isExternal
+                >
+                  <Icon
+                    as={BsWhatsapp}
+                    color="#25D366"
+                    ml="12px"
+                    w={10}
+                    h={8}
+                    cursor="pointer"
+                  ></Icon>
+                </Link>
+              </Box>
             </Box>
           </Box>
           <Text
@@ -101,7 +120,7 @@ const Footer = () => {
           </Text>
         </Box>
       </Box>
-      <Box width="60%">
+      <Box width={isHigherThan480 ? "60%" : "80%"}>
         <Divider
           sx={{
             boxShadow: "0 0 1px rgba(0, 0, 0, 0.2)",

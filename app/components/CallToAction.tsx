@@ -14,14 +14,14 @@ const CallToAction = () => {
       </Box>
       <Box
         textAlign="center"
-        padding={isHigherThan480 ? "100px" : "20px"}
+        padding={isHigherThan480 ? "100px" : "0px"}
         pt="20px"
         position="absolute"
-        top="12%"
-        left="5%"
+        top={isHigherThan480 ? "12%" : "11%"}
+        left={isHigherThan480 ? "5%" : "3%"}
         zIndex="999"
       >
-        <Heading color="#4d148c" fontSize={isHigherThan480 ? "70px" : "20px"}>
+        <Heading color="#4d148c" fontSize={isHigherThan480 ? "70px" : "40px"}>
           ¿Necesitas enviar un paquete desde Medellín?
           <br />
           ¡Aquí te ayudamos!
@@ -31,9 +31,9 @@ const CallToAction = () => {
           isExternal
         >
           <Button
-            mt={isHigherThan480 ? "40px" : "10px"}
-            width={isHigherThan480 ? "250px" : "120px"}
-            height={isHigherThan480 ? "60px" : "40px"}
+            mt={isHigherThan480 ? "40px" : "30px"}
+            width={isHigherThan480 ? "250px" : "170px"}
+            height="60px"
             fontSize={isHigherThan480 ? "25px" : "unset"}
             color="#ffffff"
             bgColor="#ff6200"

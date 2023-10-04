@@ -91,9 +91,10 @@ const Navbar = ({
   };
 
   const buttonStyle: CSSProperties = {
-    width: isHigherThan480 ? "250px" : "210px",
+    width: isHigherThan480 ? "250px" : "160px",
     height: isHigherThan480 ? "60px" : "50px",
     fontSize: isHigherThan480 ? "25px" : "20px",
+    marginLeft: isHigherThan480 ? "unset" : "15px",
     color: "#ffffff",
     backgroundColor: "#ff6200",
     marginRight: "30px",
@@ -106,7 +107,7 @@ const Navbar = ({
       justifyContent="space-between"
       alignItems="center"
       zIndex="9999"
-      p={isHigherThan480 ? "15px 40px" : "10px"}
+      p={isHigherThan480 ? "15px 40px" : "30px"}
       minHeight={isHigherThan480 ? "unset" : "160px"}
       bgColor="#4d148c"
       maxWidth="100%"

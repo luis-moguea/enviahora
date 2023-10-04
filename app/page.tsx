@@ -43,6 +43,13 @@ export default function Home() {
     width: "100%",
   };
 
+  const expStyle: CSSProperties = {
+    textAlign: "center",
+    color: "#4d148c",
+    width: "100%",
+    fontSize: "36px",
+  };
+
   return (
     <Box width="100%">
       <Navbar
@@ -63,14 +70,27 @@ export default function Home() {
           </motion.h1>
           <CallToAction />
           <AboutProduct />
-          <Box w="100%">
-            <Heading as="h2" textAlign="center" color="#4d148c" width="100%">
-              Ellos ya vivieron la experiencia. ¡Sé tú el siguiente en vivirla!
-            </Heading>
+          <Box w="100%" mt={isHigherThan480 ? "unset" : "40px"}>
+            <motion.h2
+              style={expStyle}
+              animate={{
+                color: "#4d148c",
+                y: [0, -10, 0],
+                transition: {
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                },
+              }}
+            >
+              Ellos ya vivieron la experiencia. ¡Se tú el siguiente en vivirla!
+            </motion.h2>
+
             <Box
               width="100%"
               display="flex"
               alignItems="center"
+              mt={isHigherThan480 ? "unset" : "30px"}
               padding={isHigherThan480 ? "40px" : "20px"}
               overflowX="auto"
               sx={{
@@ -101,7 +121,11 @@ export default function Home() {
         </Box>
       )}
       {showContent === "about" && (
-        <Box padding="100px" pt="40px">
+        <Box
+          mt={isHigherThan480 ? "unset" : "150px"}
+          padding={isHigherThan480 ? "100px" : "20px"}
+          pt="40px"
+        >
           <Icon
             onClick={() => handleShowContent("main")}
             as={BiArrowBack}
@@ -168,7 +192,11 @@ export default function Home() {
         </Box>
       )}
       {showContent === "bonus" && (
-        <Box padding="100px" pt="40px">
+        <Box
+          mt={isHigherThan480 ? "unset" : "150px"}
+          padding={isHigherThan480 ? "100px" : "20px"}
+          pt="40px"
+        >
           <Icon
             onClick={() => handleShowContent("main")}
             as={BiArrowBack}
@@ -219,9 +247,9 @@ export default function Home() {
             isExternal
           >
             <Button
-              mt={isHigherThan480 ? "40px" : "10px"}
-              width={isHigherThan480 ? "250px" : "120px"}
-              height={isHigherThan480 ? "60px" : "40px"}
+              mt={isHigherThan480 ? "40px" : "30px"}
+              width={isHigherThan480 ? "250px" : "170px"}
+              height="60px"
               fontSize={isHigherThan480 ? "25px" : "unset"}
               color="#ffffff"
               bgColor="#ff6200"
@@ -236,7 +264,11 @@ export default function Home() {
         </Box>
       )}
       {showContent === "countries" && (
-        <Box padding="100px" pt="40px">
+        <Box
+          mt={isHigherThan480 ? "unset" : "150px"}
+          padding={isHigherThan480 ? "100px" : "20px"}
+          pt="40px"
+        >
           <Icon
             onClick={() => handleShowContent("main")}
             as={BiArrowBack}
@@ -273,10 +305,9 @@ export default function Home() {
               isExternal
             >
               <Button
-                justifyContent="center"
-                mt={isHigherThan480 ? "40px" : "10px"}
-                width={isHigherThan480 ? "250px" : "120px"}
-                height={isHigherThan480 ? "60px" : "40px"}
+                mt={isHigherThan480 ? "40px" : "30px"}
+                width={isHigherThan480 ? "250px" : "170px"}
+                height="60px"
                 fontSize={isHigherThan480 ? "25px" : "unset"}
                 color="#ffffff"
                 bgColor="#ff6200"

@@ -15,13 +15,18 @@ const AboutProduct = () => {
     <Box
       width="100%"
       display={isHigherThan480 ? "flex" : "block"}
-      p={isHigherThan480 ? "80px" : "unset"}
+      p={isHigherThan480 ? "80px" : "20px"}
       justifyContent="center"
       gap="40px"
       alignItems="center"
     >
       <Box width={isHigherThan480 ? "50%" : "100%"}>
-        <Heading as="h2" textAlign="justify" color="#4d148c">
+        <Heading
+          as="h2"
+          fontSize="36px"
+          textAlign={isHigherThan480 ? "justify" : "center"}
+          color="#4d148c"
+        >
           Sin importar lo que necesites enviar, nosotros llevaremos tus paquetes
           con la mejor empresa en el campo, ¡FedEx!
         </Heading>
