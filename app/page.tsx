@@ -111,7 +111,16 @@ export default function Home() {
           >
             Volver
           </Icon>
-          <Heading textAlign="center" as="h2" color="#4d148c">
+          <Heading textAlign="center" as="h2" color="#4d148c" fontSize="40px">
+            ¿Quiénes somos?
+          </Heading>
+          <Heading
+            mt="40px"
+            fontSize="24px"
+            textAlign="center"
+            as="h2"
+            color="#4d148c"
+          >
             EnviAhora: Conduciendo el Camino de la Excelencia en Envíos
             Internacionales
           </Heading>
@@ -123,7 +132,13 @@ export default function Home() {
             satisfacer las crecientes necesidades de nuestros clientes,
             ofreciendo soluciones de envío internacionales de primera clase.
           </Text>
-          <Heading textAlign="center" mt="30px" as="h2" color="#4d148c">
+          <Heading
+            fontSize="24px"
+            textAlign="center"
+            mt="30px"
+            as="h2"
+            color="#4d148c"
+          >
             Nuestra Misión
           </Heading>
           <Text mt="10px" textAlign="justify">
@@ -133,7 +148,13 @@ export default function Home() {
             cada paso del proceso de envío, desde la preparación de documentos
             hasta la entrega final.
           </Text>
-          <Heading textAlign="center" mt="30px" as="h2" color="#4d148c">
+          <Heading
+            fontSize="24px"
+            textAlign="center"
+            mt="30px"
+            as="h2"
+            color="#4d148c"
+          >
             Nuestra Visión
           </Heading>
           <Text mt="10px" textAlign="justify">
