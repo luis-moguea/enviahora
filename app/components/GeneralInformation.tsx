@@ -59,7 +59,7 @@ const GeneralInformation = ({ image, text, alt, name, ml }: Props) => {
         </Box>
         <Box display="flex" justifyContent="flex-end">
           <Text
-            fontSize="14px"
+            fontSize="12px"
             fontStyle="italic"
             fontWeight="bold"
             color="#5d5d5d"
