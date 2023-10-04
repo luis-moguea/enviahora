@@ -33,9 +33,9 @@ const GeneralInformation = ({ image, text, alt, name, ml }: Props) => {
       p="28px"
       ml={ml}
       minW="300px"
-      minH="390px"
+      minH="360px"
       maxW="300px"
-      maxH="390px"
+      maxH="360px"
     >
       <Box
         padding="10px"
@@ -59,7 +59,7 @@ const GeneralInformation = ({ image, text, alt, name, ml }: Props) => {
         </Box>
         <Box display="flex" justifyContent="flex-end">
           <Text
-            fontSize="12px"
+            fontSize={isHigherThan480 ? "14px" : "12px"}
             fontStyle="italic"
             fontWeight="bold"
             color="#5d5d5d"
