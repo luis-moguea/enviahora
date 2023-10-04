@@ -37,7 +37,7 @@ export default function Home() {
     fontSize: isHigherThan480 ? "25px" : "18px",
     textAlign: "center",
     fontStyle: "oblique",
-    marginTop: isHigherThan480 ? "10px" : "400px",
+    marginTop: isHigherThan480 ? "10px" : "230px",
     marginBottom: "10px",
     fontWeight: "bolder",
     width: "100%",
