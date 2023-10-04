@@ -21,7 +21,7 @@ const Footer = () => {
 
   const imageStyle: CSSProperties = {
     maxWidth: isHigherThan480 ? "180px" : "120px",
-    maxHeight: isHigherThan480 ? "180px" : "120px",
+    minHeight: isHigherThan480 ? "180px" : "120px",
     borderRadius: "50%",
     border: "1px solid #fff",
     cursor: "pointer",
