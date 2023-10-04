@@ -37,7 +37,7 @@ export default function Home() {
     fontSize: isHigherThan480 ? "25px" : "18px",
     textAlign: "center",
     fontStyle: "oblique",
-    marginTop: isHigherThan480 ? "10px" : "230px",
+    marginTop: isHigherThan480 ? "10px" : "170px",
     marginBottom: "10px",
     fontWeight: "bolder",
     width: "100%",
@@ -52,7 +52,7 @@ export default function Home() {
         onClickLogo={() => handleShowContent("main")}
       />
       {showContent === "main" && (
-        <Box width="112%" border="solid 1px black">
+        <Box width={isHigherThan480 ? "100%" : "130%"} border="solid 1px black">
           <motion.h1
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
