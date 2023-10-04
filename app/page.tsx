@@ -52,7 +52,7 @@ export default function Home() {
         onClickLogo={() => handleShowContent("main")}
       />
       {showContent === "main" && (
-        <Box width={isHigherThan480 ? "100%" : "130%"} border="solid 1px black">
+        <Box minWidth="100%" overflow="hidden">
           <motion.h1
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
