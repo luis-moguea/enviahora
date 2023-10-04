@@ -64,7 +64,7 @@ const GeneralInformation = ({ image, text, alt, name, ml }: Props) => {
             fontWeight="bold"
             color="#5d5d5d"
             lineHeight="1.3"
-            p={isHigherThan480 ? "20px 0 20px 0px" : "10px"}
+            p={isHigherThan480 ? "20px 0 20px 0px" : "10px 0 10px 0px"}
             textAlign="right"
           >
             {text}
