@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Heading, Icon, Text } from "@chakra-ui/react";
+import { Box, Heading, Icon, Text, useMediaQuery } from "@chakra-ui/react";
 import ProductImage from "./images/ProductImage";
 import { FiTruck } from "react-icons/fi";
 import { MdTrackChanges } from "react-icons/md";
@@ -9,20 +9,23 @@ import { FaMotorcycle } from "react-icons/fa";
 import { AiOutlineFieldTime } from "react-icons/ai";
 
 const AboutProduct = () => {
+  const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
+
   return (
     <Box
-      display="flex"
-      p="80px"
+      width="100%"
+      display={isHigherThan480 ? "flex" : "block"}
+      p={isHigherThan480 ? "80px" : "unset"}
       justifyContent="center"
       gap="40px"
       alignItems="center"
     >
-      <Box width="50%">
+      <Box width={isHigherThan480 ? "50%" : "100%"}>
         <Heading as="h2" textAlign="justify" color="#4d148c">
           Sin importar lo que necesites enviar, nosotros llevaremos tus paquetes
           con la mejor empresa en el campo, ¡FedEx!
         </Heading>
-        <Box mt="40px" width="500px">
+        <Box mt="40px" width="100%">
           <Box display="flex" gap="10px" mt="20px">
             <Icon as={FiTruck} w={6} h={5} color="#ff6200" />
             <Text>¡Envíos con el costo más competitivo del mercado!</Text>

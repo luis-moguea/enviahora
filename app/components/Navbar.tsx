@@ -18,14 +18,13 @@ import { motion, useAnimation } from "framer-motion";
 import { CSSProperties } from "react";
 import { TbMenu2 } from "react-icons/tb";
 import { CgMenuMotion } from "react-icons/cg";
-import NextLink from "next/link";
 
 import React, { useEffect, useRef, useState } from "react";
 
 const buttonVibration = {
-  x: [0, -5, 5, -5, 5, 0], // Valores de posición en el eje X para la vibración
+  x: [0, -5, 5, -5, 5, 0],
   transition: {
-    duration: 0.3, // Duración de la animación en segundos
+    duration: 0.3,
   },
 };
 
@@ -48,7 +47,6 @@ const Navbar = ({
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      // Comprueba si el objetivo del evento de clic no está contenido en el elemento deseado
       if (
         refElement.current &&
         !refElement.current.contains(event.target as Node)
@@ -84,8 +82,8 @@ const Navbar = ({
     borderRadius: "50%",
     border: "1px solid #fff",
     cursor: "pointer",
-    minWidth: "80px",
-    minHeight: "80px",
+    minWidth: isHigherThan480 ? "80px" : "90px",
+    minHeight: isHigherThan480 ? "80px" : "90px",
   };
 
   const handleMenuClick = () => {
@@ -93,9 +91,9 @@ const Navbar = ({
   };
 
   const buttonStyle: CSSProperties = {
-    width: isHigherThan480 ? "250px" : "120px",
-    height: isHigherThan480 ? "60px" : "40px",
-    fontSize: isHigherThan480 ? "25px" : "unset",
+    width: isHigherThan480 ? "250px" : "210px",
+    height: isHigherThan480 ? "60px" : "50px",
+    fontSize: isHigherThan480 ? "25px" : "20px",
     color: "#ffffff",
     backgroundColor: "#ff6200",
     marginRight: "30px",
@@ -107,8 +105,9 @@ const Navbar = ({
       display="flex"
       justifyContent="space-between"
       alignItems="center"
-      zIndex="999"
+      zIndex="9999"
       p={isHigherThan480 ? "15px 40px" : "10px"}
+      minHeight={isHigherThan480 ? "unset" : "160px"}
       bgColor="#4d148c"
       maxWidth="100%"
       color="#ffffff"
@@ -121,11 +120,11 @@ const Navbar = ({
         alt="fedex-envio-logo-envios-internacional-ship-shipment-baratos-estados-unidos-rapidos"
         style={imageStyle}
         src={logo}
-        width={isHigherThan480 ? 80 : 40}
-        height={isHigherThan480 ? 90 : 40}
+        width={isHigherThan480 ? 80 : 90}
+        height={isHigherThan480 ? 80 : 90}
         onClick={onClickLogo}
       />
-      <Box display="flex">
+      <Box display="flex" alignItems="center">
         <Link
           href="https://www.fedex.com/es-es/shipping/served-countries.html"
           isExternal
@@ -154,7 +153,14 @@ const Navbar = ({
               aria-label="Options"
               onClick={handleMenuClick}
               icon={
-                menuIconState ? <CgMenuMotion /> : <TbMenu2 color="#ffffff" />
+                menuIconState ? (
+                  <CgMenuMotion fontSize={isHigherThan480 ? "unset" : "50px"} />
+                ) : (
+                  <TbMenu2
+                    fontSize={isHigherThan480 ? "unset" : "50px"}
+                    color="#ffffff"
+                  />
+                )
               }
               variant="ghost"
             />
@@ -163,13 +169,18 @@ const Navbar = ({
                 _hover={{ bgColor: "#ff6200" }}
                 color="#000000"
                 cursor="pointer"
+                onClick={onClickAbout}
               >
                 ¿Quienes somos?
               </MenuItem>
-              <MenuItem color="#000000" cursor="pointer">
+              <MenuItem
+                color="#000000"
+                cursor="pointer"
+                onClick={onClickCountries}
+              >
                 Paises destino
               </MenuItem>
-              <MenuItem color="#000000" cursor="pointer">
+              <MenuItem color="#000000" cursor="pointer" onClick={onClickBonus}>
                 Bonos
               </MenuItem>
             </MenuList>

@@ -1,6 +1,13 @@
 "use client";
 
-import { Box, Divider, Icon, Text, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Icon,
+  Text,
+  Link,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import React from "react";
 import Image from "next/image";
 import { CSSProperties } from "react";
@@ -10,6 +17,8 @@ import { CiInstagram } from "react-icons/ci";
 import { BsWhatsapp } from "react-icons/bs";
 
 const Footer = () => {
+  const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
+
   const imageStyle: CSSProperties = {
     maxWidth: "180px",
     minHeight: "180px",
@@ -25,8 +34,9 @@ const Footer = () => {
       alignItems="center"
       justifyContent="center"
       bgColor="#4d148c"
-      minH="400px"
+      minH={isHigherThan480 ? "400px" : "300px"}
       flexDir="column"
+      width="100%"
     >
       <Box display="flex" padding="40px" pt="0">
         <Image

@@ -8,8 +8,8 @@ const CallToAction = () => {
   const [isHigherThan480] = useMediaQuery("(min-width: 480px)");
 
   return (
-    <>
-      <Box position="relative" width="100%" overflow="hidden">
+    <Box width="100%">
+      <Box position="relative" overflow="hidden">
         <CallToActionImgUse />
       </Box>
       <Box
@@ -46,7 +46,7 @@ const CallToAction = () => {
           </Button>
         </Link>
       </Box>
-    </>
+    </Box>
   );
 };
 

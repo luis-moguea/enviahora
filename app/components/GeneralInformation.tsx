@@ -30,7 +30,7 @@ const GeneralInformation = ({ image, text, alt, name, ml }: Props) => {
       boxShadow="0px 4px 8px rgba(77, 20, 140, 0.5)" // Ajusta estos valores según tus preferencias
       borderRadius="10px"
       display="flex"
-      p="28px"
+      p={isHigherThan480 ? "28px" : "unset"}
       ml={ml}
       minW="300px"
       minH="360px"

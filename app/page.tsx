@@ -37,13 +37,14 @@ export default function Home() {
     fontSize: isHigherThan480 ? "25px" : "18px",
     textAlign: "center",
     fontStyle: "oblique",
-    marginTop: isHigherThan480 ? "10px" : "80px",
+    marginTop: isHigherThan480 ? "10px" : "400px",
     marginBottom: "10px",
     fontWeight: "bolder",
+    width: "100%",
   };
 
   return (
-    <Box>
+    <Box width="100%">
       <Navbar
         onClickBonus={() => handleShowContent("bonus")}
         onClickAbout={() => handleShowContent("about")}
@@ -51,7 +52,7 @@ export default function Home() {
         onClickLogo={() => handleShowContent("main")}
       />
       {showContent === "main" && (
-        <Box>
+        <Box width="100%" border="solid 1px black">
           <motion.h1
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
@@ -62,11 +63,12 @@ export default function Home() {
           </motion.h1>
           <CallToAction />
           <AboutProduct />
-          <Box>
-            <Heading as="h2" textAlign="center" color="#4d148c">
-              Ellos ya vivieron la experiencia. ¡Se tú el siguiente en vivirla!
+          <Box w="100%">
+            <Heading as="h2" textAlign="center" color="#4d148c" width="100%">
+              Ellos ya vivieron la experiencia. ¡Sé tú el siguiente en vivirla!
             </Heading>
             <Box
+              width="100%"
               display="flex"
               alignItems="center"
               padding={isHigherThan480 ? "40px" : "20px"}
