@@ -18,11 +18,11 @@ const CallToAction = () => {
         pt="20px"
         position="absolute"
         top={isHigherThan480 ? "8%" : "9%"}
-        left={isHigherThan480 ? "5%" : "2%"}
+        left={isHigherThan480 ? "5%" : "1%"}
         zIndex="999"
       >
         <Heading color="#4d148c" fontSize={isHigherThan480 ? "70px" : "40px"}>
-          ¿Necesitas realizar el envío un paquete?
+          ¿Necesitas realizar el envío de un paquete?
           <br />
           ¡Aquí te ayudamos!
         </Heading>
