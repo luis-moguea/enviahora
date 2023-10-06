@@ -36,7 +36,7 @@ const Footer = () => {
       minH={isHigherThan480 ? "400px" : "250px"}
       flexDir="column"
       width="100%"
-      mt={isHigherThan480 ? "unset" : "40px"}
+      mt="40px"
       p={isHigherThan480 ? "unset" : "40px"}
     >
       <Box

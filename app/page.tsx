@@ -22,6 +22,7 @@ import Footer from "./components/Footer";
 import { BiArrowBack } from "react-icons/bi";
 import WaLogo from "./components/images/WaLogo";
 import { FaPlane } from "react-icons/fa";
+import FaqComp from "./components/FaqComp";
 
 type ContentType = "main" | "about" | "bonus" | "countries";
 
@@ -111,6 +112,7 @@ export default function Home() {
               ))}
             </Box>
           </Box>
+          <FaqComp />
           <Footer />
           <Link
             href="https://www.fedex.com/es-es/shipping/served-countries.html"
@@ -210,14 +212,14 @@ export default function Home() {
             Bonos
           </Heading>
           <Box mt="40px">
-            <Text>
+            <Text textAlign="justify">
               ¡Síguenos en redes sociales y ahorra un{" "}
               <Text fontWeight="bold" as="span">
                 5%
               </Text>{" "}
               en tus envíos internacionales con EnviAhora! 🌍✈️
             </Text>
-            <Text mt={4}>
+            <Text mt={4} textAlign="justify">
               En EnviAhora valoramos tu apoyo y confianza. Por eso, te ofrecemos
               un descuento especial del{" "}
               <Text fontWeight="bold" as="span">
@@ -229,7 +231,7 @@ export default function Home() {
             <Text mt={2}>1. Síguenos en Facebook e Instagram.</Text>
             <Text>2. Realiza tu envío internacional con nosotros.</Text>
 
-            <Text mt={4}>
+            <Text mt={4} textAlign="justify">
               ¡Así de simple! Disfruta de envíos de primera clase con un{" "}
               <Text fontWeight="bold" as="span">
                 5%
@@ -237,7 +239,7 @@ export default function Home() {
               de descuento. Únete a nuestra comunidad en línea y ahorra mientras
               conectamos el mundo para ti. 🌐✨
             </Text>
-            <Text mt={4}>
+            <Text mt={4} textAlign="justify">
               No pierdas esta oportunidad. Síguenos hoy y comienza a ahorrar en
               tus envíos con EnviAhora.
             </Text>
@@ -282,23 +284,35 @@ export default function Home() {
           <Box mt="40px">
             <Box display="flex" fontSize="lg">
               <Icon color="#ff6200" as={FaPlane} fontSize="2xl" mr={2} />
-              <Text fontWeight="bold">
+              <Text fontWeight="bold" textAlign="justify">
                 Actualmente, ofrecemos opciones de envío que brindan
                 flexibilidad en los tiempos de entrega a más de 220 países.
               </Text>
             </Box>
             <Box mt={4} ml={4}>
-              <Icon color="#ff6200" as={FaPlane} fontSize="md" mr={2} /> Para
-              países seleccionados, nuestros envíos pueden entregarse en tan
-              solo 2 a 3 días hábiles, lo que garantiza una rápida llegada de
-              tus paquetes.
+              <Icon
+                color="#ff6200"
+                as={FaPlane}
+                fontSize="md"
+                mr={2}
+                textAlign="justify"
+              />{" "}
+              Para países seleccionados, nuestros envíos pueden entregarse en
+              tan solo 2 a 3 días hábiles, lo que garantiza una rápida llegada
+              de tus paquetes.
             </Box>
             <Box mt={2} ml={4}>
-              <Icon color="#ff6200" as={FaPlane} fontSize="md" mr={2} /> Para un
-              alcance aún más amplio, extendemos nuestros servicios a más de 215
-              países y territorios. En estos casos, los envíos pueden tardar de
-              2 a 5 días en llegar a su destino, asegurando una entrega
-              eficiente en todo el mundo.
+              <Icon
+                color="#ff6200"
+                as={FaPlane}
+                fontSize="md"
+                mr={2}
+                textAlign="justify"
+              />{" "}
+              Para un alcance aún más amplio, extendemos nuestros servicios a
+              más de 215 países y territorios. En estos casos, los envíos pueden
+              tardar de 2 a 5 días en llegar a su destino, asegurando una
+              entrega eficiente en todo el mundo.
             </Box>
             <Link
               href="https://www.fedex.com/es-es/shipping/served-countries.html"

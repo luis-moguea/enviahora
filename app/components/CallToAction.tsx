@@ -17,12 +17,12 @@ const CallToAction = () => {
         padding={isHigherThan480 ? "100px" : "0px"}
         pt="20px"
         position="absolute"
-        top={isHigherThan480 ? "12%" : "11%"}
-        left={isHigherThan480 ? "5%" : "3%"}
+        top={isHigherThan480 ? "8%" : "9%"}
+        left={isHigherThan480 ? "5%" : "2%"}
         zIndex="999"
       >
         <Heading color="#4d148c" fontSize={isHigherThan480 ? "70px" : "40px"}>
-          ¿Necesitas enviar un paquete desde Medellín?
+          ¿Necesitas realizar el envío un paquete?
           <br />
           ¡Aquí te ayudamos!
         </Heading>
