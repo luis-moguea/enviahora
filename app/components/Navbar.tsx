@@ -126,10 +126,7 @@ const Navbar = ({
         onClick={onClickLogo}
       />
       <Box display="flex" alignItems="center">
-        <Link
-          href="https://www.fedex.com/es-es/shipping/served-countries.html"
-          isExternal
-        >
+        <Link href="https://wa.me/573245769079" isExternal>
           <motion.button style={buttonStyle} animate={controls}>
             Cotiza Ahora!
           </motion.button>

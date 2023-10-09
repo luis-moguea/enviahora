@@ -66,7 +66,7 @@ const Footer = () => {
             <Box display="flex" alignItems="center">
               <Box>
                 <Link
-                  href="https://www.fedex.com/es-es/shipping/served-countries.html"
+                  href="https://www.facebook.com/profile.php?id=100092580408580&mibextid=LQQJ4d"
                   isExternal
                 >
                   <Icon
@@ -80,7 +80,7 @@ const Footer = () => {
               </Box>
               <Box>
                 <Link
-                  href="https://www.fedex.com/es-es/shipping/served-countries.html"
+                  href="https://instagram.com/enviahora?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
                   isExternal
                 >
                   <Icon
@@ -94,10 +94,7 @@ const Footer = () => {
                 </Link>
               </Box>
               <Box>
-                <Link
-                  href="https://www.fedex.com/es-es/shipping/served-countries.html"
-                  isExternal
-                >
+                <Link href="https://wa.me/573245769079" isExternal>
                   <Icon
                     as={BsWhatsapp}
                     color="#25D366"

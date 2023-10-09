@@ -73,7 +73,13 @@ const FaqComp = () => {
         borderRadius="15px"
         p={isHigherThan480 ? "40px" : "20px"}
       >
-        <Box display="flex" justifyContent="center" alignItems="center">
+        <Box
+          onClick={handleShowAnswer1}
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          cursor="pointer"
+        >
           <Text fontSize="18px" fontWeight="bold">
             ¿Puedo realizar envíos internacionales sin factura?
           </Text>
@@ -104,6 +110,8 @@ const FaqComp = () => {
           justifyContent="center"
           alignItems="center"
           mt="15px"
+          onClick={handleShowAnswer2}
+          cursor="pointer"
         >
           <Text fontSize="18px" fontWeight="bold">
             ¿Puedo enviar alimentos y dulces a Estados Unidos?
@@ -135,6 +143,8 @@ const FaqComp = () => {
           display="flex"
           justifyContent="center"
           alignItems="center"
+          onClick={handleShowAnswer3}
+          cursor="pointer"
           mt="15px"
         >
           <Text fontSize="18px" fontWeight="bold">
@@ -167,6 +177,8 @@ const FaqComp = () => {
           justifyContent="center"
           alignItems="center"
           mt="15px"
+          onClick={handleShowAnswer4}
+          cursor="pointer"
         >
           <Text fontSize="18px" fontWeight="bold">
             ¿Puedo enviar productos con refrigeración?
@@ -199,6 +211,8 @@ const FaqComp = () => {
           justifyContent="center"
           alignItems="center"
           mt="15px"
+          onClick={handleShowAnswer5}
+          cursor="pointer"
         >
           <Text fontSize="18px" fontWeight="bold">
             ¿Puedo enviar productos de cuidado personal?
