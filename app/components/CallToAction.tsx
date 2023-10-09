@@ -26,10 +26,7 @@ const CallToAction = () => {
           <br />
           ¡Aquí te ayudamos!
         </Heading>
-        <Link
-          href="https://www.fedex.com/es-es/shipping/served-countries.html"
-          isExternal
-        >
+        <Link href="https://wa.me/573245769079" isExternal>
           <Button
             mt={isHigherThan480 ? "40px" : "30px"}
             width={isHigherThan480 ? "250px" : "170px"}
