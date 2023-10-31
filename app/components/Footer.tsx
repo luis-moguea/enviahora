@@ -80,9 +80,9 @@ const Footer = () => {
           </Box>
           <Text
             fontStyle="italic"
-            fontSize="14px"
+            fontSize="12px"
             color="#F5DEB3"
-            textAlign="center"
+            textAlign="left"
           >
             ¡Conexiones Sin Fronteras, Entregas Sin Preocupaciones!
           </Text>
