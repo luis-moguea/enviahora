@@ -41,7 +41,7 @@ const Footer = () => {
     >
       <Box
         display="flex"
-        flexDir={isHigherThan480 ? "unset" : "column"}
+        flexDir={isHigherThan480 ? "unset" : "unset"}
         justifyContent={isHigherThan480 ? "unset" : "center"}
         alignItems={isHigherThan480 ? "unset" : "center"}
         padding="40px"
@@ -55,7 +55,7 @@ const Footer = () => {
         <Box
           display="flex"
           flexDir="column"
-          padding={isHigherThan480 ? "50px" : "10px"}
+          padding={isHigherThan480 ? "50px" : "20px"}
         >
           <Box
             display="flex"
