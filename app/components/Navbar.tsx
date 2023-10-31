@@ -67,8 +67,8 @@ const Navbar = ({
   useEffect(() => {
     const animateVibration = async () => {
       while (true) {
-        await controls.start({ rotate: -2 }); // Vibración hacia la izquierda
-        await controls.start({ rotate: 2 }); // Vibración hacia la derecha
+        await controls.start({ rotate: -2 });
+        await controls.start({ rotate: 2 });
       }
     };
 
@@ -112,9 +112,9 @@ const Navbar = ({
       bgColor="#4d148c"
       maxWidth="100%"
       color="#ffffff"
-      position={isHigherThan480 ? "unset" : "fixed"} // Cambia la posición a "fixed" cuando es mayor a 480px
-      top={isHigherThan480 ? "unset" : 0} // Añade un valor "top" solo cuando es mayor a 480px
-      width="100%" // Agrega esto para que ocupe todo el ancho en modo fijo
+      position={isHigherThan480 ? "unset" : "fixed"}
+      top={isHigherThan480 ? "unset" : 0}
+      width="100%"
       boxShadow="0px 4px 6px rgba(150, 75, 0, 0.2)"
     >
       <Image
@@ -138,9 +138,6 @@ const Navbar = ({
             </Text>
             <Text cursor="pointer" onClick={onClickCountries}>
               Países destino
-            </Text>
-            <Text cursor="pointer" onClick={onClickBonus}>
-              Bonos
             </Text>
           </HStack>
         ) : (
@@ -177,9 +174,6 @@ const Navbar = ({
                 onClick={onClickCountries}
               >
                 Paises destino
-              </MenuItem>
-              <MenuItem color="#000000" cursor="pointer" onClick={onClickBonus}>
-                Bonos
               </MenuItem>
             </MenuList>
           </Menu>

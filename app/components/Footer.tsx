@@ -65,35 +65,6 @@ const Footer = () => {
           >
             <Box display="flex" alignItems="center">
               <Box>
-                <Link
-                  href="https://www.facebook.com/profile.php?id=100092580408580&mibextid=LQQJ4d"
-                  isExternal
-                >
-                  <Icon
-                    as={AiFillFacebook}
-                    color="#1877F2"
-                    w={12}
-                    h={10}
-                    cursor="pointer"
-                  ></Icon>
-                </Link>
-              </Box>
-              <Box>
-                <Link
-                  href="https://instagram.com/enviahora?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
-                  isExternal
-                >
-                  <Icon
-                    as={CiInstagram}
-                    color="#E4405F"
-                    ml="12px"
-                    w={12}
-                    h={10}
-                    cursor="pointer"
-                  ></Icon>
-                </Link>
-              </Box>
-              <Box>
                 <Link href="https://wa.me/573245769079" isExternal>
                   <Icon
                     as={BsWhatsapp}
