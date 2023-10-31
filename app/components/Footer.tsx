@@ -57,13 +57,8 @@ const Footer = () => {
           flexDir="column"
           padding={isHigherThan480 ? "50px" : "20px"}
         >
-          <Box
-            display="flex"
-            flexDir={isHigherThan480 ? "unset" : "column"}
-            justifyContent={isHigherThan480 ? "unset" : "center"}
-            alignItems="center"
-          >
-            <Box display="flex" alignItems="center">
+          <Box display="flex" alignItems="center">
+            <Box display="flex">
               <Box>
                 <Link href="https://wa.me/573245769079" isExternal>
                   <Icon
