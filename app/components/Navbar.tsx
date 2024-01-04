@@ -90,7 +90,7 @@ const Navbar = ({
     setMenuIconState(!menuIconState);
   };
 
-  const phoneNumber = "573024567533";
+  const phoneNumber = "+573024567533";
 
   const handleCall = () => {
     const phoneUrl = `tel:${phoneNumber}`;
