@@ -90,6 +90,15 @@ const Navbar = ({
     setMenuIconState(!menuIconState);
   };
 
+  const phoneNumber = "573024567533";
+
+  const handleCall = () => {
+    const phoneUrl = `tel:${phoneNumber}`;
+    window.location.href = phoneUrl;
+
+    console.log("call ok");
+  };
+
   const buttonStyle: CSSProperties = {
     width: isHigherThan480 ? "250px" : "160px",
     height: isHigherThan480 ? "60px" : "50px",
@@ -126,9 +135,13 @@ const Navbar = ({
         onClick={onClickLogo}
       />
       <Box display="flex" alignItems="center">
-        <Link href="https://wa.me/573024567533" isExternal>
-          <motion.button style={buttonStyle} animate={controls}>
-            Cotiza Ahora!
+        <Link>
+          <motion.button
+            onClick={handleCall}
+            style={buttonStyle}
+            animate={controls}
+          >
+            Llamanos!
           </motion.button>
         </Link>
         {isHigherThan480 ? (

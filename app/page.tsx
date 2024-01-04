@@ -244,7 +244,7 @@ export default function Home() {
                 padding="20px"
                 _hover={{ bgColor: "#4d148c" }}
               >
-                Cotiza Ahora!
+                Escribenos!
               </Button>
             </Link>
           </Box>
