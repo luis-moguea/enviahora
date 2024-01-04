@@ -126,7 +126,7 @@ const Navbar = ({
         onClick={onClickLogo}
       />
       <Box display="flex" alignItems="center">
-        <Link href="https://wa.me/573245769079" isExternal>
+        <Link href="https://wa.me/573024567533" isExternal>
           <motion.button style={buttonStyle} animate={controls}>
             Cotiza Ahora!
           </motion.button>
