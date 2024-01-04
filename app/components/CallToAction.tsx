@@ -26,7 +26,7 @@ const CallToAction = () => {
           <br />
           ¡Aquí te ayudamos!
         </Heading>
-        <Link href="https://wa.me/573245769079" isExternal>
+        <Link href="https://wa.me/573024567533" isExternal>
           <Button
             mt={isHigherThan480 ? "40px" : "30px"}
             width={isHigherThan480 ? "250px" : "170px"}

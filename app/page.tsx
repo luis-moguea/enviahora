@@ -114,7 +114,7 @@ export default function Home() {
           </Box>
           <FaqComp />
           <Footer />
-          <Link href="https://wa.me/573245769079" isExternal>
+          <Link href="https://wa.me/573024567533" isExternal>
             <WaLogoFixed />
           </Link>
         </Box>
@@ -231,7 +231,7 @@ export default function Home() {
                 una entrega eficiente en todo el mundo.
               </Text>
             </Box>
-            <Link href="https://wa.me/573245769079" isExternal>
+            <Link href="https://wa.me/573024567533" isExternal>
               <Button
                 mt={isHigherThan480 ? "40px" : "30px"}
                 width={isHigherThan480 ? "250px" : "170px"}
