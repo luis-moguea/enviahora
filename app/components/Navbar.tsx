@@ -18,6 +18,7 @@ import { motion, useAnimation } from "framer-motion";
 import { CSSProperties } from "react";
 import { TbMenu2 } from "react-icons/tb";
 import { CgMenuMotion } from "react-icons/cg";
+import PhoneImage from "./images/PhoneImage";
 
 import React, { useEffect, useRef, useState } from "react";
 
@@ -108,6 +109,9 @@ const Navbar = ({
     backgroundColor: "#ff6200",
     marginRight: "30px",
     borderRadius: "20px",
+    alignItems: "center",
+    justifyContent: "center",
+    display: "flex",
   };
 
   return (
@@ -135,15 +139,15 @@ const Navbar = ({
         onClick={onClickLogo}
       />
       <Box display="flex" alignItems="center">
-        <Link>
-          <motion.button
-            onClick={handleCall}
-            style={buttonStyle}
-            animate={controls}
-          >
-            Llamanos!
-          </motion.button>
-        </Link>
+        <motion.button
+          onClick={handleCall}
+          style={buttonStyle}
+          animate={controls}
+        >
+          <PhoneImage />
+          Llamanos!
+        </motion.button>
+
         {isHigherThan480 ? (
           <HStack gap="30px">
             <Text cursor="pointer" onClick={onClickAbout}>
