@@ -28,6 +28,7 @@ const AboutProduct = () => {
       width="100%"
       display={isHigherThan480 ? "flex" : "block"}
       p={isHigherThan480 ? "80px" : "20px"}
+      paddingBottom={isHigherThan480 ? "40px" : "unset"}
       justifyContent="center"
       gap="40px"
       alignItems="center"

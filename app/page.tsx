@@ -23,6 +23,8 @@ import { BiArrowBack } from "react-icons/bi";
 import WaLogo from "./components/images/WaLogo";
 import { FaPlane } from "react-icons/fa";
 import FaqComp from "./components/FaqComp";
+import CallsComp from "./components/CallsComp";
+import CallsComp2 from "./components/CallsComp2";
 
 type ContentType = "main" | "about" | "bonus" | "countries";
 
@@ -49,6 +51,7 @@ export default function Home() {
     color: "#4d148c",
     width: "100%",
     fontSize: "36px",
+    marginTop: isHigherThan480 ? "unset" : "-30px",
   };
 
   return (
@@ -71,6 +74,7 @@ export default function Home() {
           </motion.h1>
           <CallToAction />
           <AboutProduct />
+          <CallsComp />
           <Box w="100%" mt={isHigherThan480 ? "unset" : "40px"}>
             <motion.h2
               style={expStyle}
@@ -113,6 +117,7 @@ export default function Home() {
             </Box>
           </Box>
           <FaqComp />
+          <CallsComp2 />
           <Footer />
           <Link href="https://wa.me/573024567533" isExternal>
             <WaLogoFixed />

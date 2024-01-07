@@ -41,6 +41,7 @@ const FaqComp = () => {
 
   return (
     <Box
+      mb="40px"
       display="flex"
       flexDir="column"
       justifyContent="center"
