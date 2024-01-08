@@ -56,6 +56,7 @@ const GeneralInformation = ({ image, text, alt, name, ml }: Props) => {
             lineHeight="1.3"
             p={isHigherThan480 ? "20px 0 20px 0px" : "10px 0 10px 0px"}
             textAlign="right"
+            mt="10px"
           >
             {text}
           </Text>
