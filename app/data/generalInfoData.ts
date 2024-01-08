@@ -10,32 +10,32 @@ import esteban from "../components/assets/faces/pexels-luis-quintero-8573550.jpg
 
 export const generalInfoData = [
     {
-        text: '"Enviahora superó mis expectativas. Mi paquete llegó a su destino internacional mucho más rápido de lo que esperaba. La atención al cliente fue excepcional, y el seguimiento en tiempo real me dio tranquilidad durante todo el proceso."',
+        text: '"Me siento muy agradecido por la experiencia con Enviahora, muy diligentes en todo el proceso de envío, super recomendados!!! "',
         image: patricia,
         alt: "envios-internacional-ship-shipment-baratos-estados-unidos-rapidos",
         name: "Ernesto B."
     },{
-        text: '"Cotizar mi envío internacional nunca fue tan fácil. Sin complicaciones ni sorpresas en la factura final. ¡Definitivamente volveré a utilizar sus servicios!"',
+        text: '"Excelente servicio, desde que me contacte con la asesora Sofía, ella fue muy atenta conmigo su atención es totalmente personalizada, 5 estrellas!!!"',
         image: cristina,
         alt: "envios-internacional-ship-shipment-baratos-estados-unidos-rapidos",
         name: "Cristina M."
     },{
-        text: '"I used EnviAhora for my international shipping needs, and it was a breeze. Their streamlined process and clear instructions made it effortless to send packages. I highly recommend their services for hassle-free shipping."',
+        text: '"enviahoras international shipping is effortless and highly recommended, thanks Sophia"',
         image: benjamin,
         alt: "envios-internacional-ship-shipment-baratos-estados-unidos-rapidos",
         name: "Benjamin P."
     },{
-        text: '"Ofrecen un servicio de envío internacional eficiente y confiable. Siempre llegan a tiempo, lo que hace que enviar paquetes al extranjero sea muy fácil."',
+        text: '"Me encanta el servicio completo que ofrecen en enviahora y lo mejor de todo es que ofrecen recogida gratis y no toca salir jajaj"',
         image: carlos,
         alt: "envios-internacional-ship-shipment-baratos-estados-unidos-rapidos",
         name: "Carlos A."
     },{
-        text: '"EnviAhora has become my go-to shipping partner. Their reliability is unmatched, and they always deliver on time. Its reassuring to have a shipping company I can trust for both personal and business shipments."',
+        text: '"Enviahora is my trusted shipping partner reliable, on time, and perfect for both personal and business shipments."',
         image: richard,
         alt: "envios-internacional-ship-shipment-baratos-estados-unidos-rapidos",
         name: "Richard K."
     },{
-        text: '"El equipo de EnviAhora es verdaderamente profesional. Me asistieron con la documentación de mi envío internacional de manera experta y efectiva. Los recomiendo ampliamente."',
+        text: '"Sam es el mejor asesor, él me ayudo a tramitar la documentación necesaria para mi envío y todo fue un exito, muchas gracias, recomendados al 100%"',
         image: esteban,
         alt: "envios-internacional-ship-shipment-baratos-estados-unidos-rapidos",
         name: "Estebán N."

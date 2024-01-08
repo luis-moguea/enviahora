@@ -30,25 +30,15 @@ const GeneralInformation = ({ image, text, alt, name, ml }: Props) => {
       boxShadow="0px 4px 8px rgba(77, 20, 140, 0.5)" // Ajusta estos valores según tus preferencias
       borderRadius="10px"
       display="flex"
+      flexDir="column"
+      justifyContent="space-between"
       p="28px"
       ml={ml}
-      minW="300px"
-      minH="360px"
-      maxW="300px"
-      maxH="360px"
+      minW="270px"
+      minH="300px"
+      maxW="270px"
+      maxH="300px"
     >
-      <Box
-        padding="10px"
-        display="flex"
-        flexDir="column"
-        justifyContent="space-between"
-        width="100%"
-      >
-        <Image alt={alt} src={image} style={imageStyle} />
-        <Text fontWeight="bold" whiteSpace="nowrap" fontStyle="oblique">
-          {name}
-        </Text>
-      </Box>
       <Box>
         <Box display="flex" justifyContent="flex-end">
           <Icon as={BsFillStarFill} w={4} h={3} color="#ffbf00"></Icon>
@@ -71,6 +61,15 @@ const GeneralInformation = ({ image, text, alt, name, ml }: Props) => {
           </Text>
         </Box>
       </Box>
+      <Text
+        mt="15px"
+        textAlign="right"
+        fontWeight="bold"
+        whiteSpace="nowrap"
+        fontStyle="oblique"
+      >
+        {name}
+      </Text>
     </Box>
   );
 };
