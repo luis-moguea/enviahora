@@ -45,7 +45,7 @@ const FaqComp = () => {
       display="flex"
       flexDir="column"
       justifyContent="center"
-      mt="40px"
+      mt={isHigherThan480 ? "40px" : "5px"}
       p={isHigherThan480 ? "unset" : "20px"}
     >
       <Box>

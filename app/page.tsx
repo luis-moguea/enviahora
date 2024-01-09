@@ -53,6 +53,7 @@ export default function Home() {
     fontSize: "30px",
     marginTop: isHigherThan480 ? "unset" : "20px",
     padding: isHigherThan480 ? "unset" : "20px",
+    paddingBottom: 0,
   };
 
   return (
