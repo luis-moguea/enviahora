@@ -50,8 +50,8 @@ export default function Home() {
     textAlign: "center",
     color: "#4d148c",
     width: "100%",
-    fontSize: "36px",
-    marginTop: isHigherThan480 ? "unset" : "-30px",
+    fontSize: "30px",
+    marginTop: isHigherThan480 ? "unset" : "20px",
   };
 
   return (
@@ -75,22 +75,10 @@ export default function Home() {
           <CallToAction />
           <AboutProduct />
           <CallsComp />
+          <Heading color="#4d148c" textAlign="center">
+            ¡Más de 800 clientes satisfechos!
+          </Heading>
           <Box w="100%" mt={isHigherThan480 ? "unset" : "40px"}>
-            <motion.h2
-              style={expStyle}
-              animate={{
-                color: "#4d148c",
-                y: [0, -10, 0],
-                transition: {
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatType: "loop",
-                },
-              }}
-            >
-              Ellos ya vivieron la experiencia. ¡Se tú el siguiente en vivirla!
-            </motion.h2>
-
             <Box
               width="100%"
               display="flex"
@@ -115,6 +103,20 @@ export default function Home() {
                 />
               ))}
             </Box>
+            <motion.h2
+              style={expStyle}
+              animate={{
+                color: "#4d148c",
+                y: [0, -10, 0],
+                transition: {
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                },
+              }}
+            >
+              Ellos ya vivieron la experiencia. ¡Se tú el siguiente en vivirla!
+            </motion.h2>
           </Box>
           <FaqComp />
           <CallsComp2 />

@@ -34,7 +34,7 @@ const FaqComp = () => {
 
   const expStyle: CSSProperties = {
     textAlign: "center",
-    color: "#4d148c",
+    color: "#ff6200",
     width: "100%",
     fontSize: isHigherThan480 ? "36px" : "32px",
   };
@@ -45,13 +45,14 @@ const FaqComp = () => {
       display="flex"
       flexDir="column"
       justifyContent="center"
+      mt="40px"
       p={isHigherThan480 ? "unset" : "20px"}
     >
       <Box>
         <motion.h2
           style={expStyle}
           animate={{
-            color: "#4d148c",
+            color: "#ff6200",
             y: [0, -10, 0],
             transition: {
               duration: 2,
