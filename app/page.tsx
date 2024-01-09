@@ -52,6 +52,7 @@ export default function Home() {
     width: "100%",
     fontSize: "30px",
     marginTop: isHigherThan480 ? "unset" : "20px",
+    padding: isHigherThan480 ? "unset" : "20px",
   };
 
   return (
