@@ -47,7 +47,7 @@ const CallsComp = () => {
             padding="20px"
             _hover={{ bgColor: "#4d148c" }}
           >
-            Escribenos!
+            Escribenos
           </Button>
         </Link>
         <Button
@@ -63,7 +63,7 @@ const CallsComp = () => {
           mb="40px"
           _hover={{ bgColor: "#4d148c" }}
         >
-          Llamanos!
+          Llamanos
         </Button>
       </Box>
     </Box>

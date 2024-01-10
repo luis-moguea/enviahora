@@ -144,7 +144,7 @@ const Navbar = ({
         <Link href="https://wa.me/573024567533" isExternal>
           <motion.button style={buttonStyle} animate={controls}>
             <WaLogo />
-            Asesoría!
+            Asesoría
           </motion.button>
         </Link>
 

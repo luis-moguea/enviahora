@@ -39,7 +39,7 @@ const CallToAction = () => {
             padding="20px"
             _hover={{ bgColor: "#4d148c" }}
           >
-            Escribenos!
+            Escribenos
           </Button>
         </Link>
       </Box>
