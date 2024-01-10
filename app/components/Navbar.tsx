@@ -103,7 +103,7 @@ const Navbar = ({
   const buttonStyle: CSSProperties = {
     width: isHigherThan480 ? "250px" : "160px",
     height: isHigherThan480 ? "60px" : "50px",
-    fontSize: isHigherThan480 ? "25px" : "20px",
+    fontSize: isHigherThan480 ? "25px" : "18px",
     marginLeft: isHigherThan480 ? "unset" : "15px",
     color: "#ffffff",
     backgroundColor: "#ff6200",
@@ -144,7 +144,7 @@ const Navbar = ({
         <Link href="https://wa.me/573024567533" isExternal>
           <motion.button style={buttonStyle} animate={controls}>
             <WaLogo />
-            Escribenos!
+            Asesoría!
           </motion.button>
         </Link>
 
