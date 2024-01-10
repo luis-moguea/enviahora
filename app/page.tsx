@@ -121,7 +121,6 @@ export default function Home() {
             </motion.h2>
           </Box>
           <FaqComp />
-          <CallsComp2 />
           <Footer />
           <Link href="https://wa.me/573024567533" isExternal>
             <WaLogoFixed />

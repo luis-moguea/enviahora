@@ -18,7 +18,7 @@ import { motion, useAnimation } from "framer-motion";
 import { CSSProperties } from "react";
 import { TbMenu2 } from "react-icons/tb";
 import { CgMenuMotion } from "react-icons/cg";
-import PhoneImage from "./images/PhoneImage";
+import WaLogo from "./images/WaLogo";
 
 import React, { useEffect, useRef, useState } from "react";
 
@@ -112,6 +112,7 @@ const Navbar = ({
     alignItems: "center",
     justifyContent: "center",
     display: "flex",
+    textDecoration: "none",
   };
 
   return (
@@ -138,15 +139,14 @@ const Navbar = ({
         height={isHigherThan480 ? 80 : 90}
         onClick={onClickLogo}
       />
+
       <Box display="flex" alignItems="center">
-        <motion.button
-          onClick={handleCall}
-          style={buttonStyle}
-          animate={controls}
-        >
-          <PhoneImage />
-          Llamanos!
-        </motion.button>
+        <Link href="https://wa.me/573024567533" isExternal>
+          <motion.button style={buttonStyle} animate={controls}>
+            <WaLogo />
+            Escribenos!
+          </motion.button>
+        </Link>
 
         {isHigherThan480 ? (
           <HStack gap="30px">
