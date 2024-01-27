@@ -26,6 +26,7 @@ import FaqComp from "./components/FaqComp";
 import CallsComp from "./components/CallsComp";
 import CallsComp2 from "./components/CallsComp2";
 import Head from "next/head";
+import MapLocal from "./components/MapLocal";
 
 type ContentType = "main" | "about" | "bonus" | "countries";
 
@@ -122,6 +123,7 @@ export default function Home() {
             </motion.h2>
           </Box>
           <FaqComp />
+          <MapLocal />
           <Footer />
           <Link href="https://wa.me/573024567533" isExternal>
             <WaLogoFixed />
