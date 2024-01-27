@@ -59,23 +59,6 @@ export default function Home() {
 
   return (
     <Box width="100%">
-      <Head>
-        {/* Google Analytics */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-98DMZCSN2R"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-98DMZCSN2R');
-          `,
-          }}
-        />
-      </Head>
       <Navbar
         onClickBonus={() => handleShowContent("bonus")}
         onClickAbout={() => handleShowContent("about")}
