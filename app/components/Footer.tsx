@@ -59,7 +59,7 @@ const Footer = () => {
         >
           <Box display="flex" alignItems="center">
             <Box display="flex">
-              <Box>
+              <Box display="flex" justifyContent="center" alignItems="center">
                 <Link href="https://wa.me/573024567533" isExternal>
                   <Icon
                     as={BsWhatsapp}
