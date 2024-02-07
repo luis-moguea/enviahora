@@ -76,7 +76,7 @@ const Footer = () => {
                   <Icon
                     as={CiInstagram}
                     color="#E4405F"
-                    ml="12px"
+                    ml="5px"
                     w={12}
                     h={10}
                     cursor="pointer"
