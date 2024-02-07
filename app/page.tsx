@@ -52,7 +52,7 @@ export default function Home() {
     textAlign: "center",
     color: "#4d148c",
     width: "100%",
-    fontSize: isHigherThan480 ? "36px" : "32px",
+    fontSize: isHigherThan480 ? "36px" : "28px",
     marginTop: isHigherThan480 ? "unset" : "20px",
     padding: isHigherThan480 ? "unset" : "20px",
     paddingBottom: 0,
@@ -122,7 +122,7 @@ export default function Home() {
               Ellos ya vivieron la experiencia. ¡Se tú el siguiente en vivirla!
             </motion.h2>
           </Box>
-          <Box pl="28px" pr="28px" pt={isHigherThan480 ? "30px" : "unset"}>
+          <Box pl="28px" pr="28px" pt={isHigherThan480 ? "30px" : "22px"}>
             <Heading
               color="#4d148c"
               textAlign="center"
