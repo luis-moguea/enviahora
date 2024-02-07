@@ -80,7 +80,7 @@ export default function Home() {
           <AboutProduct />
           <CallsComp />
           <Heading color="#4d148c" textAlign="center">
-            ¡Más de 800 clientes satisfechos!
+            ¡Más de 150 clientes satisfechos!
           </Heading>
           <Box w="100%" mt={isHigherThan480 ? "unset" : "40px"}>
             <Box
@@ -123,7 +123,15 @@ export default function Home() {
             </motion.h2>
           </Box>
           <FaqComp />
+          <Heading color="#4d148c" textAlign="center">
+            ¿Prefieres ir hasta nuestra oficina? ¡Estamos exactamente en la
+            estación Parque Berrio!
+          </Heading>
           <MapLocal />
+          <Text>
+            Av. Carabobo #51-52, La Candelária, Parque Berrio, C.C Verctruz,
+            piso 3, local 3233
+          </Text>
           <Footer />
           <Link href="https://wa.me/573024567533" isExternal>
             <WaLogoFixed />
@@ -159,12 +167,12 @@ export default function Home() {
             Internacionales
           </Heading>
           <Text mt="10px" textAlign="justify">
-            Con 16 años de experiencia en el mundo de los envíos
-            internacionales, EnviAhora se ha convertido en un pilar de
-            confiabilidad y excelencia en Colombia. Desde nuestros humildes
-            comienzos, hemos crecido y evolucionado constantemente para
-            satisfacer las crecientes necesidades de nuestros clientes,
-            ofreciendo soluciones de envío internacionales de primera clase.
+            Con más de 3 años de experiencia en el mundo de los envíos
+            internacionales, en EnviAhora nos hemos convertido en un pilar de
+            confiabilidad y excelencia en Colombia. Desde nuestros comienzos,
+            hemos crecido y evolucionado constantemente para satisfacer las
+            crecientes necesidades de nuestros clientes, ofreciendo soluciones
+            de envío internacionales de primera clase.
           </Text>
           <Heading
             fontSize="24px"
@@ -192,8 +200,8 @@ export default function Home() {
             Nuestra Visión
           </Heading>
           <Text mt="10px" textAlign="justify">
-            EnviAhora aspira a ser líder en envíos internacionales en Colombia y
-            el mundo. Queremos ser la primera elección para nuestros clientes,
+            Aspiramos a ser lideres en envíos internacionales en Colombia y el
+            mundo. Queremos ser la primera elección para nuestros clientes,
             expandirnos globalmente y mantener nuestro compromiso con la
             confiabilidad y la excelencia. Nuestra visión es construir
             conexiones globales y contribuir al crecimiento en un mundo cada vez
