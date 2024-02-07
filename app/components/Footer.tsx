@@ -64,7 +64,6 @@ const Footer = () => {
                   <Icon
                     as={BsWhatsapp}
                     color="#25D366"
-                    ml="12px"
                     w={10}
                     h={8}
                     cursor="pointer"
