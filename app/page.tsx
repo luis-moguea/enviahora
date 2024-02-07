@@ -50,7 +50,7 @@ export default function Home() {
 
   const expStyle: CSSProperties = {
     textAlign: "center",
-    color: "#4d148c",
+    color: "#ff6200",
     width: "100%",
     fontSize: isHigherThan480 ? "36px" : "28px",
     marginTop: isHigherThan480 ? "unset" : "20px",
@@ -132,7 +132,7 @@ export default function Home() {
               en la estación Parque Berrio!
             </Heading>
             <MapLocal />
-            <Text pt="15px" textAlign="center">
+            <Text color="#4d148c" pt="15px" textAlign="center">
               Av. Carabobo #51-52, La Candelaria, Parque Berrio, C.C Veracruz,
               piso 3, local 3233
             </Text>
