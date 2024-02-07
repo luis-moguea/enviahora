@@ -52,7 +52,7 @@ export default function Home() {
     textAlign: "center",
     color: "#4d148c",
     width: "100%",
-    fontSize: "30px",
+    fontSize: isHigherThan480 ? "36px" : "32px",
     marginTop: isHigherThan480 ? "unset" : "20px",
     padding: isHigherThan480 ? "unset" : "20px",
     paddingBottom: 0,
@@ -110,7 +110,7 @@ export default function Home() {
             <motion.h2
               style={expStyle}
               animate={{
-                color: "#4d148c",
+                color: "#ff6200",
                 y: [0, -10, 0],
                 transition: {
                   duration: 2,
@@ -122,14 +122,18 @@ export default function Home() {
               Ellos ya vivieron la experiencia. ¡Se tú el siguiente en vivirla!
             </motion.h2>
           </Box>
-          <Box pl="28px" pr="28px">
-            <Heading color="#4d148c" textAlign="center" pb="20px">
+          <Box pl="28px" pr="28px" pt={isHigherThan480 ? "30px" : "unset"}>
+            <Heading
+              color="#4d148c"
+              textAlign="center"
+              pb={isHigherThan480 ? "30px" : "20px"}
+            >
               ¿Prefieres dirigirte hasta nuestra oficina? ¡Estamos exactamente
               en la estación Parque Berrio!
             </Heading>
             <MapLocal />
             <Text pt="15px" textAlign="center">
-              Av. Carabobo #51-52, La Candelária, Parque Berrio, C.C Verctruz,
+              Av. Carabobo #51-52, La Candelaria, Parque Berrio, C.C Veracruz,
               piso 3, local 3233
             </Text>
           </Box>
