@@ -70,6 +70,19 @@ const Footer = () => {
                     cursor="pointer"
                   ></Icon>
                 </Link>
+                <Link
+                  href="https://instagram.com/enviahora?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+                  isExternal
+                >
+                  <Icon
+                    as={CiInstagram}
+                    color="#E4405F"
+                    ml="12px"
+                    w={12}
+                    h={10}
+                    cursor="pointer"
+                  ></Icon>
+                </Link>
               </Box>
             </Box>
           </Box>
