@@ -11,7 +11,7 @@ import {
 import React from "react";
 import Image from "next/image";
 import { CSSProperties } from "react";
-import logo from "./assets/enviahora-img-Nav.png";
+import logo from "./assets/enviahora-img-Nav-png-last.png";
 import { AiFillFacebook } from "react-icons/ai";
 import { CiInstagram } from "react-icons/ci";
 import { BsWhatsapp } from "react-icons/bs";
@@ -21,9 +21,7 @@ const Footer = () => {
 
   const imageStyle: CSSProperties = {
     maxWidth: isHigherThan480 ? "180px" : "120px",
-    minHeight: isHigherThan480 ? "180px" : "120px",
-    borderRadius: "50%",
-    border: "1px solid #fff",
+    minHeight: isHigherThan480 ? "160px" : "120px",
     cursor: "pointer",
   };
 
@@ -32,7 +30,7 @@ const Footer = () => {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      bgColor="#4d148c"
+      bgColor="rgba(77, 20, 140, 0.8)"
       minH={isHigherThan480 ? "400px" : "250px"}
       flexDir="column"
       width="100%"
@@ -88,7 +86,7 @@ const Footer = () => {
           <Text
             fontStyle="italic"
             fontSize="12px"
-            color="#F5DEB3"
+            color="#ffffff"
             textAlign="left"
           >
             ¡Conexiones Sin Fronteras, Entregas Sin Preocupaciones!
@@ -101,7 +99,7 @@ const Footer = () => {
             boxShadow: "0 0 1px rgba(0, 0, 0, 0.2)",
           }}
         />
-        <Text mt="20px" fontSize="12px" color="#F5DEB3" textAlign="center">
+        <Text mt="20px" fontSize="12px" color="#ffffff" textAlign="center">
           Enviahora | Todos los derechos reservados &reg;
         </Text>
       </Box>

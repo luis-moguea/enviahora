@@ -12,7 +12,7 @@ import {
   HStack,
   Link,
 } from "@chakra-ui/react";
-import logo from "./assets/enviahora-img-Nav.png";
+import logo from "./assets/enviahora-img-Nav-png-last.png";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { CSSProperties } from "react";
@@ -80,11 +80,9 @@ const Navbar = ({
   }, [controls]);
 
   const imageStyle: CSSProperties = {
-    borderRadius: "50%",
-    border: "1px solid #fff",
     cursor: "pointer",
     minWidth: isHigherThan480 ? "80px" : "90px",
-    minHeight: isHigherThan480 ? "80px" : "90px",
+    minHeight: isHigherThan480 ? "80px" : "70px",
   };
 
   const handleMenuClick = () => {
@@ -123,7 +121,7 @@ const Navbar = ({
       zIndex="9999"
       p={isHigherThan480 ? "15px 40px" : "30px"}
       minHeight={isHigherThan480 ? "unset" : "160px"}
-      bgColor="#4d148c"
+      bgColor="rgba(77, 20, 140, 0.8)"
       maxWidth="100%"
       color="#ffffff"
       position={isHigherThan480 ? "unset" : "fixed"}
@@ -136,7 +134,7 @@ const Navbar = ({
         style={imageStyle}
         src={logo}
         width={isHigherThan480 ? 80 : 90}
-        height={isHigherThan480 ? 80 : 90}
+        height={isHigherThan480 ? 60 : 90}
         onClick={onClickLogo}
       />
 
