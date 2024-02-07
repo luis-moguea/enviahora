@@ -124,8 +124,8 @@ export default function Home() {
           </Box>
           <FaqComp />
           <Heading color="#4d148c" textAlign="center">
-            ¿Prefieres ir hasta nuestra oficina? ¡Estamos exactamente en la
-            estación Parque Berrio!
+            ¿Prefieres dirigirte hasta nuestra oficina? ¡Estamos exactamente en
+            la estación Parque Berrio!
           </Heading>
           <MapLocal />
           <Text>
