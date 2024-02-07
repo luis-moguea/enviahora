@@ -122,16 +122,18 @@ export default function Home() {
               Ellos ya vivieron la experiencia. ¡Se tú el siguiente en vivirla!
             </motion.h2>
           </Box>
+          <Box pl="28px" pr="28px">
+            <Heading color="#4d148c" textAlign="center" pb="20px">
+              ¿Prefieres dirigirte hasta nuestra oficina? ¡Estamos exactamente
+              en la estación Parque Berrio!
+            </Heading>
+            <MapLocal />
+            <Text pt="15px" textAlign="center">
+              Av. Carabobo #51-52, La Candelária, Parque Berrio, C.C Verctruz,
+              piso 3, local 3233
+            </Text>
+          </Box>
           <FaqComp />
-          <Heading color="#4d148c" textAlign="center">
-            ¿Prefieres dirigirte hasta nuestra oficina? ¡Estamos exactamente en
-            la estación Parque Berrio!
-          </Heading>
-          <MapLocal />
-          <Text>
-            Av. Carabobo #51-52, La Candelária, Parque Berrio, C.C Verctruz,
-            piso 3, local 3233
-          </Text>
           <Footer />
           <Link href="https://wa.me/573024567533" isExternal>
             <WaLogoFixed />
