@@ -12,7 +12,7 @@ import {
   HStack,
   Link,
 } from "@chakra-ui/react";
-import logo from "./assets/enviahora-img-Nav-png-last.png";
+import logo from "./assets/enviahora-img-Nav-png.png";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { CSSProperties } from "react";
@@ -121,7 +121,7 @@ const Navbar = ({
       zIndex="9999"
       p={isHigherThan480 ? "15px 40px" : "30px"}
       minHeight={isHigherThan480 ? "unset" : "160px"}
-      bgColor="rgba(77, 20, 140, 0.8)"
+      bgColor="rgba(255, 255, 255, 0.8)"
       maxWidth="100%"
       color="#ffffff"
       position={isHigherThan480 ? "unset" : "fixed"}
@@ -148,10 +148,10 @@ const Navbar = ({
 
         {isHigherThan480 ? (
           <HStack gap="30px">
-            <Text cursor="pointer" onClick={onClickAbout}>
+            <Text color="#4d148c" cursor="pointer" onClick={onClickAbout}>
               ¿Quiénes somos?
             </Text>
-            <Text cursor="pointer" onClick={onClickCountries}>
+            <Text color="#4d148c" cursor="pointer" onClick={onClickCountries}>
               Países destino
             </Text>
           </HStack>
@@ -164,11 +164,14 @@ const Navbar = ({
               onClick={handleMenuClick}
               icon={
                 menuIconState ? (
-                  <CgMenuMotion fontSize={isHigherThan480 ? "unset" : "50px"} />
+                  <CgMenuMotion
+                    color="#4d148c"
+                    fontSize={isHigherThan480 ? "unset" : "50px"}
+                  />
                 ) : (
                   <TbMenu2
                     fontSize={isHigherThan480 ? "unset" : "50px"}
-                    color="#ffffff"
+                    color="#4d148c"
                   />
                 )
               }
@@ -177,14 +180,14 @@ const Navbar = ({
             <MenuList>
               <MenuItem
                 _hover={{ bgColor: "#ff6200" }}
-                color="#000000"
+                color="#4d148c"
                 cursor="pointer"
                 onClick={onClickAbout}
               >
                 ¿Quienes somos?
               </MenuItem>
               <MenuItem
-                color="#000000"
+                color="#4d148c"
                 cursor="pointer"
                 onClick={onClickCountries}
               >
