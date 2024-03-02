@@ -17,14 +17,14 @@ const CallToAction = () => {
         padding={isHigherThan480 ? "100px" : "0px"}
         pt="20px"
         position="absolute"
-        top={isHigherThan480 ? "8%" : "9%"}
-        left={isHigherThan480 ? "5%" : "1%"}
+        top={isHigherThan480 ? "8%" : "7%"}
+        left={isHigherThan480 ? "16%" : "1%"}
         zIndex="999"
       >
-        <Heading color="#4d148c" fontSize={isHigherThan480 ? "70px" : "40px"}>
-          ¿Necesitas realizar el envío de un paquete?
+        <Heading color="#4d148c" fontSize={isHigherThan480 ? "70px" : "50px"}>
+          Envíos Internacionales
           <br />
-          ¡Aquí te ayudamos!
+          <span style={{ color: "#ff6200" }}>RÁPIDOS Y SEGUROS</span>
         </Heading>
         <Link href="https://wa.me/573024567533" isExternal>
           <Button
@@ -33,11 +33,11 @@ const CallToAction = () => {
             height="60px"
             fontSize={isHigherThan480 ? "25px" : "unset"}
             color="#ffffff"
-            bgColor="#ff6200"
+            bgColor="#4d148c"
             borderRadius="40px"
             rightIcon={<WaLogo />}
             padding="20px"
-            _hover={{ bgColor: "#4d148c" }}
+            _hover={{ bgColor: "#ff6200" }}
           >
             Escribenos
           </Button>
